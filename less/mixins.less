@@ -1,0 +1,42 @@
+// Mixins
+
+@mobile: ~'(max-width: 500px)';
+
+.flex(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.btn-solid(@bg-color, @color, @width) {
+  background-color: @button-color;
+  color: @color;
+  width: @width;
+  cursor: button;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  .flex(center, center);
+  padding: 2%;
+
+  &:hover {
+    color: @button-color;
+    background-color: @button-hover-color;
+  }
+}
+
+.btn-border(@bg-color, @color, @width) {
+  background-color: @button-color-with-border;
+  color: @color;
+  width: @width;
+  cursor: button;
+  font-size: 1.6rem;
+  border: solid 6px @btn-border;
+  border-radius: 5px;
+  .flex(center, center);
+  padding: 2%;
+
+  &:hover {
+    color: #fff;
+    background-color: @button-color;
+  }
+}

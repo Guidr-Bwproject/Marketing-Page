@@ -155,37 +155,8 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.wrapper {
-  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
-}
-.wrapper nav {
+.container {
+  max-width: 800px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.wrapper nav .nav-container {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
-.wrapper nav .nav-container img {
-  height: 10vh;
-  width: 23vh;
-}
-.wrapper nav .nav-container .nav-menu {
-  width: 20%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.wrapper nav .nav-container .nav-menu a {
-  text-decoration: none;
-  color: #707070;
-  font-size: 1.4rem;
+  margin: 0 auto;
 }
