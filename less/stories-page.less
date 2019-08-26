@@ -1,0 +1,58 @@
+*{
+    border-color: 1px black;
+}
+body{
+    
+}
+
+.hero{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/images/about-guides-card.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    h1{
+        color:white;
+    }
+}
+
+section.storyCards{
+    width:70%;
+    margin:0 auto;
+    // @media @phone{
+    //     width:90%;
+    //     margin-bottom:20px;
+    // }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 20px 0px 40px;
+    // @media @phone{
+    //     width:100%;
+    // }
+    .card{
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width:40%;
+        img{
+            width:100%;
+
+        }
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+
+.pagesNav{
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    // font-family: 
+}
