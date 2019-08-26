@@ -1,0 +1,35 @@
+// Navigation Styles
+
+.wrapper {
+    background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+
+    nav {
+        width: 100%;
+        .flex(space-between, center);
+        // padding: 1% 0;
+        margin: auto;
+        background-color: @nav-bg;
+
+        .nav-container {
+            max-width: 1200px;
+            width: 100%;
+            .flex(space-between, center);
+            margin: auto;
+
+        img {
+        height: 10vh;
+        width: 23vh;
+            }//closes img
+        .nav-menu {
+            width: 20%;
+            .flex(space-around, center);
+
+            a {
+                text-decoration: none;
+                color: @nav-menu;
+                font-size: 1.4rem;
+            }
+        }
+        } //closes nav-container
+    } //closes nav
+}
