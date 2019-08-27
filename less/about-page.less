@@ -1,32 +1,48 @@
 
-*{
-    border: 1px solid red;
-}
+
 
 body{
     margin: 0;
+    box-sizing: border-box;
+
 }
+
+.nav {
+    background: rgba(240, 235, 235, 0.438);
+    
 
 
 nav{
-    
-    
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-left: 5%;
     box-sizing: border-box;
+    
+    
     .a{
         display: flex;
         justify-content: space-between;
         width: 50%;
         padding-right: 5%;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #707070;
+        }
+        
     }
 }
-
+}
 // navbar
 
 
 .main-img{
     width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    box-sizing: border-box;
 }
+
+// main img
