@@ -9,8 +9,13 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-left: 5%;
   box-sizing: border-box;
+  padding: 2% 0 2% 0;
+}
+.nav nav .logo {
+  width: 20%;
+  height: auto;
+  margin-left: 5%;
 }
 .nav nav .a {
   display: flex;
@@ -29,4 +34,14 @@ body {
   top: 0px;
   z-index: -1;
   box-sizing: border-box;
+}
+.logo2 {
+  width: 45%;
+  height: auto;
+  padding-left: 30%;
+  padding-top: 5%;
+  margin-bottom: 38%;
+}
+.cards {
+  background: url('/images/guidr\ icon.svg');
 }
