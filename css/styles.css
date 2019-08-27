@@ -161,6 +161,11 @@ p {
   padding-bottom: 200px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .wrapper {
+    background-position: center;
+  }
+}
 .wrapper nav {
   width: 100%;
   display: flex;
@@ -176,24 +181,54 @@ p {
   align-items: center;
   margin: 0 50px;
 }
+@media (max-width: 500px) {
+  .wrapper nav .nav-container {
+    margin: 0 10px;
+  }
+}
 .wrapper nav .nav-container .nav-menu {
   width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .wrapper nav .nav-container .nav-menu {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper nav .nav-container .nav-menu {
+    width: 50%;
+  }
+}
 .wrapper nav .nav-container .nav-menu a {
   text-decoration: none;
   color: #707070;
   font-size: 1.4rem;
 }
+@media (max-width: 500px) {
+  .wrapper nav .nav-container .nav-menu a {
+    font-size: 1.2rem;
+  }
+}
 .wrapper .hero {
-  position: relative;
   margin: 15% 0;
   margin-left: 10%;
 }
+@media (max-width: 500px) {
+  .wrapper .hero {
+    padding-top: 75px;
+    margin-left: 2%;
+  }
+}
 .wrapper .hero img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .wrapper .hero img {
+    width: 60%;
+  }
 }
 .wrapper .hero p {
   color: white;
@@ -201,7 +236,11 @@ p {
   margin-bottom: 1%;
   margin-left: 3%;
   font-size: 1.4vw;
-  font-family: Roboto bold;
+}
+@media (max-width: 500px) {
+  .wrapper .hero p {
+    font-size: 1.1rem;
+  }
 }
 .wrapper .hero .btn-get-started {
   background-color: white;
@@ -220,6 +259,43 @@ p {
   color: white;
   background-color: #314b11;
 }
+@media (max-width: 500px) {
+  .wrapper .hero .btn-get-started {
+    background-color: white;
+    color: #314b11;
+    width: 30%;
+    cursor: button;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    padding: 2%;
+  }
+  .wrapper .hero .btn-get-started:hover {
+    color: white;
+    background-color: #314b11;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper .hero .btn-get-started {
+    background-color: white;
+    color: #314b11;
+    width: 20%;
+    cursor: button;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+  }
+  .wrapper .hero .btn-get-started:hover {
+    color: white;
+    background-color: #314b11;
+  }
+}
 .header {
   width: 60%;
   display: flex;
@@ -228,15 +304,35 @@ p {
   flex-direction: column;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .header {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    text-align: center;
+  }
+}
 .header h1 {
   margin-top: 10%;
   font-size: 6rem;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    padding-bottom: 5%;
+  }
 }
 .header p {
   margin-top: 2%;
   font-size: 1.6rem;
   text-align: center;
   color: #707070;
+}
+@media (max-width: 500px) {
+  .header p {
+    padding-bottom: 5%;
+  }
 }
 .header .buttons {
   display: flex;
@@ -246,7 +342,16 @@ p {
   width: 60%;
   margin: 8% 0;
 }
-.header .btn-solid {
+@media (max-width: 500px) {
+  .header .buttons {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+}
+.header .buttons .btn-solid {
   background-color: #314b11;
   color: white;
   width: 100%;
@@ -256,7 +361,13 @@ p {
   padding: 3%;
   margin-right: 15px;
 }
-.header .btn-border {
+@media (max-width: 500px) {
+  .header .buttons .btn-solid {
+    margin-right: 0;
+    margin: 10px;
+  }
+}
+.header .buttons .btn-border {
   background-color: white;
   color: #314b11;
   width: 100%;
@@ -264,7 +375,12 @@ p {
   border: solid 3px #314b11;
   font-size: 2rem;
   padding: 3%;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .header .buttons .btn-border {
+    margin-left: 0;
+  }
 }
 .top-content {
   width: 100%;
@@ -272,7 +388,7 @@ p {
 }
 .top-content .macbookpro {
   z-index: 1;
-  margin-top: -40%;
+  margin-top: -25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,6 +402,13 @@ p {
   margin: auto;
   margin-bottom: 10%;
 }
+@media (max-width: 500px) {
+  .top-content .top-content-text {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30%;
+  }
+}
 .top-content .top-content-text h2 {
   font-size: 5rem;
   margin-top: 10%;
@@ -295,6 +418,11 @@ p {
   width: 60%;
   text-align: center;
   padding: 3%;
+}
+@media (max-width: 500px) {
+  .top-content .top-content-text p {
+    width: 75%;
+  }
 }
 .middle-content {
   background-color: #efefef;
@@ -313,12 +441,23 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .middle-content .cards {
+    margin-top: -20%;
+    width: 100%;
+  }
+}
 .middle-content .cards .card {
   width: 45%;
   justify-content: space-evenly;
   margin: 20px;
   background-color: white;
   border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .middle-content .cards .card {
+    width: 80%;
+  }
 }
 .middle-content .cards .card img {
   width: 100%;
@@ -357,6 +496,11 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .testimonials .card-section {
+    width: 90%;
+  }
+}
 .testimonials .card-section .test-card {
   width: 45%;
   margin: 20px;
@@ -368,11 +512,22 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .testimonials .card-section .test-card {
+    width: 70%;
+  }
+}
 .testimonials .card-section .test-card h2 {
   margin-left: -90%;
   padding: 5%;
   font-size: 3.4rem;
   color: #314b11;
+}
+@media (max-width: 500px) {
+  .testimonials .card-section .test-card h2 {
+    margin-left: -70%;
+    padding-top: 10%;
+  }
 }
 .testimonials .card-section .test-card p {
   padding-left: 5%;
@@ -385,9 +540,19 @@ p {
   margin-right: -50%;
   font-size: 2.4rem;
 }
+@media (max-width: 500px) {
+  .testimonials .card-section .test-card h3 {
+    margin-right: -5%;
+  }
+}
 .testimonials .card-section .test-card .test-card-profile-photo {
   padding: 5%;
   margin-right: -40%;
+}
+@media (max-width: 500px) {
+  .testimonials .card-section .test-card .test-card-profile-photo {
+    margin-right: -5%;
+  }
 }
 .plans-section {
   width: 100%;
@@ -405,6 +570,13 @@ p {
   padding-top: 20%;
   padding-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .plans-section .card-section {
+    padding-top: 50%;
+    padding-bottom: 2%;
+    flex-direction: column;
+  }
+}
 .plans-section .card-section .plan-cards {
   width: 35%;
   height: 500px;
@@ -415,6 +587,11 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .plans-section .card-section .plan-cards {
+    width: 80%;
+  }
 }
 .plans-section .card-section .plan-cards h1 {
   color: #314b11;
@@ -450,6 +627,7 @@ p {
   padding: 3%;
   margin-right: 15px;
   margin-top: 100px;
+  text-align: center;
 }
 .plans-section .card-section .plan-cards .btn-border {
   background-color: white;
@@ -471,6 +649,11 @@ footer {
   margin: auto;
   padding: 5%;
 }
+footer p {
+  color: white;
+  font-size: 1rem;
+  padding: 2%;
+}
 footer .footerLogo {
   text-align: center;
 }
@@ -480,13 +663,23 @@ footer .nav-menu {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer .nav-menu {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  footer .nav-menu {
+    width: 50%;
+  }
+}
 footer .nav-menu a {
   text-decoration: none;
   color: white;
-  font-size: 1.8rem;
-  padding-bottom: 4%;
+  font-size: 1.4rem;
 }
-footer p {
-  font-size: 1.2rem;
-  color: #efefef;
+@media (max-width: 500px) {
+  footer .nav-menu a {
+    font-size: 1.2rem;
+  }
 }
