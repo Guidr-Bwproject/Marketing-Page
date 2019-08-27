@@ -1,0 +1,31 @@
+.nav-div .nav-div2 {
+  background: white;
+  opacity: 0.6;
+  width: 100%;
+  margin: 0;
+}
+.nav-div nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 5%;
+}
+.nav-div nav div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding-right: 5%;
+}
+.nav-div nav div:nth-of-type(2) a {
+  text-decoration: none;
+  color: #707070;
+}
+.main-img {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
