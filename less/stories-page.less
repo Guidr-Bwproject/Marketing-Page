@@ -2,34 +2,38 @@ body{
     border-color: 1px black;
 }
 container{
-    max-width:900px;
+    width:100%;
 }
 
 .hero{
-    max-width: 900px;
-    height: 300px;
-    margin: auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(/images/about-guides-card.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    h1{
-        color:white;
-    }
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/images/about-guides-card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  h1{
+      color:white;
+  }
 }
 
 header div.stories-menu{
-    a{
-        display:flex;
-        margin:10px;
-        border-radius: 12px;
+  width: 60%;
+  margin: 50px auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    a{  margin:5px;
+        border-radius: 5px;
         background: green;
         color: white;
         text-decoration: none;
-        padding: 10px 30px;
+        padding: 5px 30px;
     }
     a:hover{
         background:grey;
@@ -38,47 +42,55 @@ header div.stories-menu{
 }
 
 section.storyCards{
-    max-width:60%;
+    width:75%;
     margin:0 auto;
     // @media @phone{
     //     width:90%;
     //     margin-bottom:20px;
     // }
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     // @media @phone{
     //     width:100%;
     // }
     .card{
-        justify-content:space-evenly;
-        border-radius: 25px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width:40vw;
-        margin:100px;
-        img{
-            width:100%;
-            border-radius: 25px 25px 0 0;
-        }
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        @media @phone{
-            width:90vw;
-            display: flex;
-            flex-wrap: column;
-        }
-    }
+      justify-content:space-evenly;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width:45%;
+      margin:10px;
+      img{
+        width:100%;
+        border-radius: 12px 12px 0 0;
+      }
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      // @media @phone{
+      //     width:90vw;
+      //     display: flex;
+      //     flex-wrap: column;
+      // }
+      .content{
+        padding:5%
+      }
+  }
 }
 .pagesNav{
     .pagination{
-    text-decoration: none;
-    text-decoration-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding:10%;
-    // font-family: 
-    }
+    margin:5% 0;
+    a{
+      text-decoration: none;
+      text-decoration-color: green;
+      text-align: center;
+      padding:1%;
+      // font-family: 
+      }
+  }
 }
