@@ -62,7 +62,7 @@ header div.stories-menu{
       background: green;
       color: white;
       text-decoration: none;
-      padding: 5px 30px;
+      padding: 0.8% 5%;
     }
     a:hover{
       background:grey;
@@ -73,24 +73,26 @@ header div.stories-menu{
 section.storyCards{
   width:75%;
   margin:0 auto;
-  // @media @phone{
-  //     width:90%;
-  //     margin-bottom:20px;
-  // }
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  // @media @phone{
-  //     width:100%;
-  // }
+    // @media @phone{
+    //   width:90vw;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    // }
   .card{
-    justify-content:space-evenly;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width:45%;
-    margin:10px;
+    width:40%;
+    justify-content:space-evenly;
+    margin:3% 2%;
+    // @media @mobile{
+    //   width:100%;
+    // }
     img{
       width:100%;
       border-radius: 12px 12px 0 0;
@@ -98,11 +100,6 @@ section.storyCards{
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
-    // @media @phone{
-    //     width:90vw;
-    //     display: flex;
-    //     flex-wrap: column;
-    // }
     .content{
       padding:5%
     }
@@ -113,7 +110,7 @@ section.storyCards{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:5% 0;
+  margin:1% 0 4%;
   a{
     text-decoration: none;
     text-decoration-color: green;
@@ -126,23 +123,21 @@ section.storyCards{
 
 footer{
   background-color: green;
-  // @center;
   display:flex;
   justify-content: center;
   .nav-container{
-    width:300px;
+    width:220px;
     margin:2% 0 2%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    // justify-content: space-between;
     img{
-      width: 250px;
+      width: 100%;
     }
     nav{
-      width:250px;
+      width:100%;
       display:flex;
       justify-content: space-between;
       a{
