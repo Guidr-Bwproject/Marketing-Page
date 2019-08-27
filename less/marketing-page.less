@@ -124,3 +124,61 @@
     }//closes cards
 }// closes middle-content
 
+.testimonials {
+    width: 100%;
+    .flex(center, center);
+    flex-direction: column;
+
+    .test-heading {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5%;
+        
+        h2 {
+            color: @secondary-font-color;
+        }// closes h2
+    }//closes test-heading
+
+    .card-section {
+        width: 80%;
+        margin: auto;
+        .flex(center, center);
+        flex-wrap: wrap;
+
+        .test-card {
+            width: 45%;
+            margin: 20px;
+            border-radius: 12px;
+            flex-direction: row;
+            background-color: @section-color;
+            .flex(space-evenly, center);
+            flex-wrap: wrap;
+
+            h2 {
+                margin-left: -90%;
+                padding: 5%;
+                font-size: 3.4rem;
+                color: @secondary-font-color;
+            }// closes h2
+
+            p {
+                padding-left: 5%;
+                padding-right: 5%;
+                font-size: 1.8rem;
+                color: @main-font-color;
+            }// closes p
+
+            h3 {
+                color: @secondary-font-color;
+                margin-right: -50%;
+                font-size: 2.4rem;
+            }// closes h3
+
+            .test-card-profile-photo {
+                padding: 5%;
+                margin-right: -40%;
+            }
+        }// closes test-card
+    }// closes card-section
+}// closes testimonials

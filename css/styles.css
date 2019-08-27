@@ -332,3 +332,59 @@ p {
   padding: 0 5%;
   margin-bottom: 20%;
 }
+.testimonials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials .test-heading {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.testimonials .test-heading h2 {
+  color: #314b11;
+}
+.testimonials .card-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonials .card-section .test-card {
+  width: 45%;
+  margin: 20px;
+  border-radius: 12px;
+  flex-direction: row;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonials .card-section .test-card h2 {
+  margin-left: -90%;
+  padding: 5%;
+  font-size: 3.4rem;
+  color: #314b11;
+}
+.testimonials .card-section .test-card p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.8rem;
+  color: #707070;
+}
+.testimonials .card-section .test-card h3 {
+  color: #314b11;
+  margin-right: -50%;
+  font-size: 2.4rem;
+}
+.testimonials .card-section .test-card .test-card-profile-photo {
+  padding: 5%;
+  margin-right: -40%;
+}
