@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  color: #707070;
 }
 h1,
 h2,
@@ -157,6 +156,9 @@ p {
 }
 .wrapper {
   background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 120vh;
 }
 .wrapper nav {
   width: 100%;
@@ -167,12 +169,11 @@ p {
   background-color: rgba(255, 255, 255, 0.4);
 }
 .wrapper nav .nav-container {
-  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 0 50px;
 }
 .wrapper nav .nav-container img {
   height: 10vh;
@@ -188,4 +189,37 @@ p {
   text-decoration: none;
   color: #707070;
   font-size: 1.4rem;
+}
+.wrapper .hero {
+  position: relative;
+  margin: 15% 0;
+  margin-left: 10%;
+}
+.wrapper .hero img {
+  width: 40%;
+}
+.wrapper .hero p {
+  color: white;
+  margin-top: -2%;
+  margin-bottom: 1%;
+  margin-left: 3%;
+  font-size: 1.4vw;
+  font-family: Roboto bold;
+}
+.wrapper .hero .btn-get-started {
+  background-color: white;
+  color: #314b11;
+  width: 15%;
+  cursor: button;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin-left: 3%;
+}
+.wrapper .hero .btn-get-started:hover {
+  color: white;
+  background-color: #314b11;
 }
