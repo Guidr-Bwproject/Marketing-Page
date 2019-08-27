@@ -1,35 +1,56 @@
 // Navigation Styles
 
 .wrapper {
-    background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+  width: 100%;
 
-    nav {
-        width: 100%;
-        .flex(space-between, center);
-        // padding: 1% 0;
-        margin: auto;
-        background-color: @nav-bg;
+  nav {
+    width: 100%;
+    .flex(space-between, center);
+    margin: auto;
+    background-color: @nav-bg;
 
-        .nav-container {
-            max-width: 1200px;
-            width: 100%;
-            .flex(space-between, center);
-            margin: auto;
+    .nav-container {
+      width: 100%;
+      .flex(space-between, center);
+      margin: 0 50px;
 
-        img {
-        height: 10vh;
-        width: 23vh;
-            }//closes img
-        .nav-menu {
-            width: 20%;
-            .flex(space-around, center);
+      .nav-menu {
+        width: 20%;
+        .flex(space-around, center);
 
-            a {
-                text-decoration: none;
-                color: @nav-menu;
-                font-size: 1.4rem;
-            }
+        a {
+          text-decoration: none;
+          color: @nav-menu;
+          font-size: 1.4rem;
         }
-        } //closes nav-container
-    } //closes nav
+      }
+    } //closes nav-container
+  } //closes nav
+
+  .hero {
+    position: relative;
+    margin: 15% 0;
+    margin-left: 10%;
+
+    img {
+      // height: 30vh;
+      width: 40%;
+    }
+
+    p {
+      color: white;
+      margin-top: -2%;
+      margin-bottom: 1%;
+      margin-left: 3%;
+      font-size: 1.4vw;
+    }
+    .btn-get-started {
+      .btn-solid(white, @button-color, 15%);
+      margin-left: 3%;
+    }
+  }
 }
