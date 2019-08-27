@@ -1,15 +1,18 @@
-* {
+body {
   border-color: 1px black;
 }
+container {
+  max-width: 900px;
+}
 .hero {
-  width: 100vw;
-  height: 400px;
+  max-width: 900px;
+  height: 300px;
+  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url(/images/about-guides-card.png);
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -17,12 +20,11 @@
   color: white;
 }
 section.storyCards {
-  width: 70%;
+  max-width: 60%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px 0px 40px;
 }
 section.storyCards .card {
   border-radius: 25px;
@@ -32,12 +34,14 @@ section.storyCards .card {
 }
 section.storyCards .card img {
   width: 100%;
+  border-radius: 25px 25px 0 0;
 }
-section.storyCards .card:hover {
+section.storyCards .card .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.pagesNav {
+section.storyCards .pagesNav {
   text-decoration: none;
+  text-decoration-color: none;
   display: flex;
   justify-content: center;
 }
