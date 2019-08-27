@@ -1,5 +1,126 @@
 // Marketing Page Styles
 
-//
+// Header Section
 
+.header {
+    width: 60%;
+    .flex(space-between, center);
+    flex-direction: column;
+    margin: auto;
+
+    h1 {
+        margin-top: 10%;
+        font-size: 6rem;
+    }
+
+    p {
+        margin-top: 2%;
+        font-size: 1.6rem;
+        text-align: center;
+        color: @main-font-color;
+    }
+
+    .buttons {
+        .flex(center, center);
+        flex-direction: row;
+        width: 60%;
+        margin: 8% 0;
+    }
+
+        .btn-solid {
+            background-color: @button-color;
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            border: solid 3px @button-color;
+            font-size: 2rem;
+            padding: 3%;
+            margin-right: 15px;
+        }
+
+        .btn-border {
+                background-color: white;
+                color: @button-color;
+                width: 100%;
+                border-radius: 10px;
+                border: solid 3px @button-color;
+                font-size: 2rem;
+                padding: 3%;
+                margin-left: 15px;
+        }
+
+    
+}// closes header
+
+.top-content {
+    width: 100%;
+    overflow: hidden;
+
+    .macbookpro {
+        z-index: 1;
+        margin-top: -40%;
+        .flex(center, center);
+    }//closes macbookpro
+
+    .top-content-text {
+        width: 60%;
+        .flex(center, center);
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 10%;
+
+        h2 {
+            font-size: 5rem;
+            margin-top: 10%;
+            color: @secondary-font-color;
+        }// closes h2
+
+        p {
+            width: 60%;
+            text-align: center;
+            padding: 3%;
+        }
+    }// closes top-content-text
+}// closes top-content
+
+.middle-content {
+    background-color: @section-color;
+    width: 100%;
+    margin-bottom: 10%;
+    border: solid @section-color;
+
+    .cards {
+        z-index: 1;
+        width: 75%;
+        margin: auto;
+        margin-top: -10%;
+        margin-bottom: 5%;
+        .flex(center, center);
+        flex-wrap: wrap;
+        
+
+        .card {
+            width: 45%;
+            justify-content: space-evenly;
+            margin: 20px;
+            background-color: white;
+            border-radius: 12px;
+
+            img {
+                width:100%;
+                border-radius: 12px 12px 0 0;
+              }// closes img
+
+            h2 {
+                padding: 5%;
+                color: @secondary-font-color;
+            }// closes h2
+
+            p {
+                padding: 0 5%;
+                margin-bottom: 20%;
+            }
+        }//closes left-card
+    }//closes cards
+}// closes middle-content
 
