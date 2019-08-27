@@ -1,0 +1,492 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.wrapper {
+  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+  width: 100%;
+}
+.wrapper nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.wrapper nav .nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+.wrapper nav .nav-container .nav-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper nav .nav-container .nav-menu a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.4rem;
+}
+.wrapper .hero {
+  position: relative;
+  margin: 15% 0;
+  margin-left: 10%;
+}
+.wrapper .hero img {
+  width: 40%;
+}
+.wrapper .hero p {
+  color: white;
+  margin-top: -2%;
+  margin-bottom: 1%;
+  margin-left: 3%;
+  font-size: 1.4vw;
+  font-family: Roboto bold;
+}
+.wrapper .hero .btn-get-started {
+  background-color: white;
+  color: #314b11;
+  width: 15%;
+  cursor: button;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin-left: 3%;
+}
+.wrapper .hero .btn-get-started:hover {
+  color: white;
+  background-color: #314b11;
+}
+.header {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.header h1 {
+  margin-top: 10%;
+  font-size: 6rem;
+}
+.header p {
+  margin-top: 2%;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #707070;
+}
+.header .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  margin: 8% 0;
+}
+.header .btn-solid {
+  background-color: #314b11;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #314b11;
+  font-size: 2rem;
+  padding: 3%;
+  margin-right: 15px;
+}
+.header .btn-border {
+  background-color: white;
+  color: #314b11;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #314b11;
+  font-size: 2rem;
+  padding: 3%;
+  margin-left: 15px;
+}
+.top-content {
+  width: 100%;
+  overflow: hidden;
+}
+.top-content .macbookpro {
+  z-index: 1;
+  margin-top: -40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-content .top-content-text {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.top-content .top-content-text h2 {
+  font-size: 5rem;
+  margin-top: 10%;
+  color: #314b11;
+}
+.top-content .top-content-text p {
+  width: 60%;
+  text-align: center;
+  padding: 3%;
+}
+.middle-content {
+  background-color: #efefef;
+  width: 100%;
+  margin-bottom: 10%;
+  border: solid #efefef;
+}
+.middle-content .cards {
+  z-index: 1;
+  width: 75%;
+  margin: auto;
+  margin-top: -10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.middle-content .cards .card {
+  width: 45%;
+  justify-content: space-evenly;
+  margin: 20px;
+  background-color: white;
+  border-radius: 12px;
+}
+.middle-content .cards .card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.middle-content .cards .card h2 {
+  padding: 5%;
+  color: #314b11;
+}
+.middle-content .cards .card p {
+  padding: 0 5%;
+  margin-bottom: 20%;
+}
+.testimonials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+.testimonials .test-heading {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.testimonials .test-heading h2 {
+  color: #314b11;
+}
+.testimonials .card-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonials .card-section .test-card {
+  width: 45%;
+  margin: 20px;
+  border-radius: 12px;
+  flex-direction: row;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonials .card-section .test-card h2 {
+  margin-left: -90%;
+  padding: 5%;
+  font-size: 3.4rem;
+  color: #314b11;
+}
+.testimonials .card-section .test-card p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.8rem;
+  color: #707070;
+}
+.testimonials .card-section .test-card h3 {
+  color: #314b11;
+  margin-right: -50%;
+  font-size: 2.4rem;
+}
+.testimonials .card-section .test-card .test-card-profile-photo {
+  padding: 5%;
+  margin-right: -40%;
+}
+.plans-section {
+  width: 100%;
+  padding-bottom: 200px;
+  background-image: url(/images/samuel-ferrara-iecJiKe_RNg-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.plans-section .card-section {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+.plans-section .card-section .plan-cards {
+  width: 35%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.plans-section .card-section .plan-cards h1 {
+  color: #314b11;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 10%;
+}
+.plans-section .card-section .plan-cards h2 {
+  color: #314b11;
+  padding-top: 2%;
+}
+.plans-section .card-section .plan-cards ul {
+  color: #707070;
+  font-size: 2rem;
+  padding-top: 10%;
+}
+.plans-section .card-section .plan-cards .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+}
+.plans-section .card-section .plan-cards .btn-solid {
+  background-color: #314b11;
+  justify-content: flex-end;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #314b11;
+  font-size: 2rem;
+  padding: 3%;
+  margin-right: 15px;
+  margin-top: 100px;
+}
+.plans-section .card-section .plan-cards .btn-border {
+  background-color: white;
+  color: #314b11;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 3px #314b11;
+  font-size: 2rem;
+  padding: 3%;
+  margin-left: 15px;
+}
+footer {
+  width: 100%;
+  background-color: #314b11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 5%;
+}
+footer .footerLogo {
+  text-align: center;
+}
+footer .nav-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding-bottom: 4%;
+}
+footer p {
+  font-size: 1.2rem;
+  color: #efefef;
+}

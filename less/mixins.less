@@ -4,3 +4,46 @@
   align-items: center;
   text-align: center;
 }
+
+// Mixins
+
+@mobile: ~'(max-width: 500px)';
+
+.flex(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.btn-solid(@bg-color, @color, @width) {
+  background-color: @bg-color;
+  color: @color;
+  width: @width;
+  cursor: button;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  .flex(center, center);
+  padding: 1%;
+
+  &:hover {
+    color: white;
+    background-color: @button-color;
+  }
+}
+
+.btn-border(@bg-color, @color, @width) {
+  background-color: @button-color-with-border;
+  color: @color;
+  width: @width;
+  cursor: button;
+  font-size: 1.6rem;
+  border: solid 3px @btn-border;
+  border-radius: 5px;
+  .flex(center, center);
+  padding: 1%;
+
+  &:hover {
+    color: #fff;
+    background-color: @button-color;
+  }
+}

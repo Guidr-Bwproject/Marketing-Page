@@ -1,0 +1,264 @@
+// Marketing Page Styles
+
+// Header Section
+
+.header {
+    width: 60%;
+    .flex(space-between, center);
+    flex-direction: column;
+    margin: auto;
+
+    h1 {
+        margin-top: 10%;
+        font-size: 6rem;
+    }
+
+    p {
+        margin-top: 2%;
+        font-size: 1.6rem;
+        text-align: center;
+        color: @main-font-color;
+    }
+
+    .buttons {
+        .flex(center, center);
+        flex-direction: row;
+        width: 60%;
+        margin: 8% 0;
+    }
+
+        .btn-solid {
+            background-color: @button-color;
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            border: solid 3px @button-color;
+            font-size: 2rem;
+            padding: 3%;
+            margin-right: 15px;
+        }
+
+        .btn-border {
+                background-color: white;
+                color: @button-color;
+                width: 100%;
+                border-radius: 10px;
+                border: solid 3px @button-color;
+                font-size: 2rem;
+                padding: 3%;
+                margin-left: 15px;
+        }
+
+    
+}// closes header
+
+.top-content {
+    width: 100%;
+    overflow: hidden;
+
+    .macbookpro {
+        z-index: 1;
+        margin-top: -40%;
+        .flex(center, center);
+    }//closes macbookpro
+
+    .top-content-text {
+        width: 60%;
+        .flex(center, center);
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 10%;
+
+        h2 {
+            font-size: 5rem;
+            margin-top: 10%;
+            color: @secondary-font-color;
+        }// closes h2
+
+        p {
+            width: 60%;
+            text-align: center;
+            padding: 3%;
+        }
+    }// closes top-content-text
+}// closes top-content
+
+.middle-content {
+    background-color: @section-color;
+    width: 100%;
+    margin-bottom: 10%;
+    border: solid @section-color;
+
+    .cards {
+        z-index: 1;
+        width: 75%;
+        margin: auto;
+        margin-top: -10%;
+        margin-bottom: 5%;
+        .flex(center, center);
+        flex-wrap: wrap;
+        
+
+        .card {
+            width: 45%;
+            justify-content: space-evenly;
+            margin: 20px;
+            background-color: white;
+            border-radius: 12px;
+
+            img {
+                width:100%;
+                border-radius: 12px 12px 0 0;
+              }// closes img
+
+            h2 {
+                padding: 5%;
+                color: @secondary-font-color;
+            }// closes h2
+
+            p {
+                padding: 0 5%;
+                margin-bottom: 20%;
+            }
+        }//closes left-card
+    }//closes cards
+}// closes middle-content
+
+.testimonials {
+    width: 100%;
+    .flex(center, center);
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    .test-heading {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5%;
+        
+        h2 {
+            color: @secondary-font-color;
+        }// closes h2
+    }//closes test-heading
+
+    .card-section {
+        width: 80%;
+        margin: auto;
+        .flex(center, center);
+        flex-wrap: wrap;
+
+        .test-card {
+            width: 45%;
+            margin: 20px;
+            border-radius: 12px;
+            flex-direction: row;
+            background-color: @section-color;
+            .flex(space-evenly, center);
+            flex-wrap: wrap;
+
+            h2 {
+                margin-left: -90%;
+                padding: 5%;
+                font-size: 3.4rem;
+                color: @secondary-font-color;
+            }// closes h2
+
+            p {
+                padding-left: 5%;
+                padding-right: 5%;
+                font-size: 1.8rem;
+                color: @main-font-color;
+            }// closes p
+
+            h3 {
+                color: @secondary-font-color;
+                margin-right: -50%;
+                font-size: 2.4rem;
+            }// closes h3
+
+            .test-card-profile-photo {
+                padding: 5%;
+                margin-right: -40%;
+            }
+        }// closes test-card
+    }// closes card-section
+}// closes testimonials
+
+.plans-section {
+    width: 100%;
+    padding-bottom: 200px;
+    background-image: url(/images/samuel-ferrara-iecJiKe_RNg-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .card-section {
+        width: 90%;
+        .flex(center, center);
+        margin: auto;
+        padding-top: 20%;
+        padding-bottom: 5%;
+
+
+        .plan-cards {
+            width: 35%;
+            height: 500px;
+            margin: 20px;
+            border-radius: 12px;
+            background-color: white;
+            // background-size: 100%;
+            .flex(flex-start, center);
+            flex-direction: column;
+            
+            h1 {
+                color: @secondary-font-color;
+                font-size: 5rem;
+                text-align: center;
+                padding-top: 10%;
+    
+            }// closes h1
+
+            h2 {
+                color: @secondary-font-color;
+                padding-top: 2%;
+                
+            }// closes h2
+
+            ul {
+                color: @main-font-color;
+                font-size: 2rem;
+                padding-top: 10%;
+            }// closes ul
+
+            .buttons {
+                .flex(center, center);
+                flex-direction: row;
+                width: 60%;
+                margin: auto;
+            }
+        
+                .btn-solid {
+                    background-color: @button-color;
+                    justify-content: flex-end;
+                    color: white;
+                    width: 100%;
+                    border-radius: 10px;
+                    border: solid 3px @button-color;
+                    font-size: 2rem;
+                    padding: 3%;
+                    margin-right: 15px;
+                    margin-top: 100px;
+                }
+        
+                .btn-border {
+                        background-color: white;
+                        color: @button-color;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: solid 3px @button-color;
+                        font-size: 2rem;
+                        padding: 3%;
+                        margin-left: 15px;
+                }
+        }// closes plan-cards
+    }// closes card-section
+}// closes plans-section
