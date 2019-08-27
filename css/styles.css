@@ -461,3 +461,32 @@ p {
   padding: 3%;
   margin-left: 15px;
 }
+footer {
+  width: 100%;
+  background-color: #314b11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 5%;
+}
+footer .footerLogo {
+  text-align: center;
+}
+footer .nav-menu {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding-bottom: 4%;
+}
+footer p {
+  font-size: 1.2rem;
+  color: #efefef;
+}
