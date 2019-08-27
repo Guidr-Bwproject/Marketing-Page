@@ -1,5 +1,4 @@
 body{
-  border-color: 1px black;
   margin:0;
 }
 // container{
@@ -12,10 +11,9 @@ nav .nav-container{
   top:0;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255,255,255,.5);
+  background-color: @nav-bg;
   z-index: 2;
   img{
-    // border-color:1px red;
     width:100px;
     padding:10px 30px;
   }
@@ -25,6 +23,10 @@ nav .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a{
+      text-decoration: none;
+      color: @nav-menu;
+    }
   }
 }
 
@@ -37,7 +39,7 @@ nav .nav-container{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/images/about-guides-card.png);
+  background-image: url(/images/josh-reid-meOFNlRbHmY-unsplash.png);
   background-position: center center;
   background-size:cover;
   .hero-inner{
@@ -59,14 +61,19 @@ header div.stories-menu{
     a{  
       margin:5px;
       border-radius: 5px;
-      background: green;
-      color: white;
+      background:@button-hover-color;
+      color:@main-font-color;
       text-decoration: none;
       padding: 0.8% 5%;
     }
     a:hover{
-      background:grey;
-      color:green;
+      background:@button-color-with-border;
+      color:@btn-color;
+      border:3px solid @btn-border;
+    }
+    a:active{
+      background:@btn-color;
+      color: white;
     }
 }
 
