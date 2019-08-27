@@ -7,6 +7,10 @@
   padding-bottom: 200px;
   width: 100%;
 
+  @media @mobile {
+    background-position: center;
+  }
+
   nav {
     width: 100%;
     .flex(space-between, center);
@@ -18,27 +22,51 @@
       .flex(space-between, center);
       margin: 0 50px;
 
+      @media @mobile {
+        margin: 0 10px;
+      }
+
       .nav-menu {
         width: 20%;
         .flex(space-around, center);
+
+        @media @mobile {
+          width: 70%;
+        }
+
+        @media @tablet {
+          width: 50%;
+        }
 
         a {
           text-decoration: none;
           color: @nav-menu;
           font-size: 1.4rem;
+
+          @media @mobile {
+            font-size: 1.2rem;
+          }
         }
       }
     } //closes nav-container
   } //closes nav
 
   .hero {
-    position: relative;
     margin: 15% 0;
     margin-left: 10%;
+
+    @media @mobile {
+      padding-top: 75px;
+      margin-left: 2%;
+    }
 
     img {
       // height: 30vh;
       width: 40%;
+
+      @media @mobile {
+        width: 60%;
+      }
     }
 
     p {
@@ -47,10 +75,23 @@
       margin-bottom: 1%;
       margin-left: 3%;
       font-size: 1.4vw;
+
+      @media @mobile {
+        font-size: 1.1rem;
+      }
     }
     .btn-get-started {
       .btn-solid(white, @button-color, 15%);
       margin-left: 3%;
+
+      @media @mobile {
+        .btn-solid(white, @button-color, 30%);
+        padding: 2%;
+      }
+
+      @media @tablet {
+        .btn-solid(white, @button-color, 20%);
+      }
     }
   }
 }
