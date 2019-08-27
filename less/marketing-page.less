@@ -128,6 +128,7 @@
     width: 100%;
     .flex(center, center);
     flex-direction: column;
+    margin-bottom: 10%;
 
     .test-heading {
         width: 50%;
@@ -182,3 +183,82 @@
         }// closes test-card
     }// closes card-section
 }// closes testimonials
+
+.plans-section {
+    width: 100%;
+    padding-bottom: 200px;
+    background-image: url(/images/samuel-ferrara-iecJiKe_RNg-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .card-section {
+        width: 90%;
+        .flex(center, center);
+        margin: auto;
+        padding-top: 20%;
+        padding-bottom: 5%;
+
+
+        .plan-cards {
+            width: 35%;
+            height: 500px;
+            margin: 20px;
+            border-radius: 12px;
+            background-color: white;
+            // background-size: 100%;
+            .flex(flex-start, center);
+            flex-direction: column;
+            
+            h1 {
+                color: @secondary-font-color;
+                font-size: 5rem;
+                text-align: center;
+                padding-top: 10%;
+    
+            }// closes h1
+
+            h2 {
+                color: @secondary-font-color;
+                padding-top: 2%;
+                
+            }// closes h2
+
+            ul {
+                color: @main-font-color;
+                font-size: 2rem;
+                padding-top: 10%;
+            }// closes ul
+
+            .buttons {
+                .flex(center, center);
+                flex-direction: row;
+                width: 60%;
+                margin: auto;
+            }
+        
+                .btn-solid {
+                    background-color: @button-color;
+                    justify-content: flex-end;
+                    color: white;
+                    width: 100%;
+                    border-radius: 10px;
+                    border: solid 3px @button-color;
+                    font-size: 2rem;
+                    padding: 3%;
+                    margin-right: 15px;
+                    margin-top: 100px;
+                }
+        
+                .btn-border {
+                        background-color: white;
+                        color: @button-color;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: solid 3px @button-color;
+                        font-size: 2rem;
+                        padding: 3%;
+                        margin-left: 15px;
+                }
+        }// closes plan-cards
+    }// closes card-section
+}// closes plans-section
