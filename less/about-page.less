@@ -20,6 +20,21 @@ nav{
     width: 100%;
     box-sizing: border-box;
     padding: 2% 0 2% 0;
+    @media screen and (max-width: 430px){
+        flex-direction: column;
+        padding-bottom: 20%;
+        
+    }
+    @media screen and(max-width:400px) {
+            padding-bottom: 16.5%;
+        }
+         @media screen and(max-width:370px) {
+            padding-bottom: 14%;
+         }
+         @media screen and(max-width:350px) {
+             padding-bottom: 8%;
+         }
+
     .logo{
        width: 40%;
        height: auto;
@@ -33,10 +48,19 @@ nav{
         width: 50%;
         padding-right: 5%;
         align-items: center;
+        @media screen and (max-width: 430px) {
+            flex-direction: column;
+            margin: 0 auto;
+            line-height: 40px;
+        }
         a{
             text-decoration: none;
             color: #707070;
             margin-right: 5%;
+        }
+        a:hover{
+            color: white;
+            transition: .5s;
         }
         
     }
@@ -59,7 +83,10 @@ nav{
     height: auto;
     padding-left: 30%;
     padding-top: 5%;
-    margin-bottom: 38%
+    margin-bottom: 38%;
+    @media screen and (max-width: 430px) {
+        display: none;
+    }
 }
 
 .middle{
@@ -81,13 +108,19 @@ nav{
             color: #707070;
             margin-bottom: 10%;
         }
-        
+        @media screen and (max-width: 430px) {
+            margin-top: 20%;
+            h1{
+                font-size: 4rem;
+            }
+        }
     }
     .cards{
             display: flex;
             justify-content: space-around;
             padding-bottom: 10%;
             background: linear-gradient(rgba(224, 20, 20, 0.007), rgba(224, 20, 20, 0) 20%, #f7f7f7, #f7f7f7 80%);
+            
          
             
             div{
@@ -114,6 +147,16 @@ nav{
                 height: auto;
                 margin: 0 auto;
             }
+            @media screen and (max-width: 430px) {
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                div {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 5%;
+                }
+            }
         }
         button{
             background: #314B11;
@@ -125,7 +168,9 @@ nav{
             border-radius: 15px;
             margin: 0 auto;
 
+             
         }
+        
 }
 // cards
 
