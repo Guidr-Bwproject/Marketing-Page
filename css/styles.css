@@ -154,83 +154,88 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.wrapper {
-  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 200px;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .wrapper {
-    background-position: center;
-  }
-}
-.wrapper nav {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  position: absolute;
+  top: 0;
   background-color: rgba(255, 255, 255, 0.4);
+  z-index: 2;
 }
-.wrapper nav .nav-container {
+nav .nav-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 50px;
 }
 @media (max-width: 500px) {
-  .wrapper nav .nav-container {
+  nav .nav-container {
     margin: 0 10px;
   }
 }
-.wrapper nav .nav-container .nav-menu {
+@media (max-width: 900px) {
+  nav .nav-container {
+    margin: 0 20px;
+  }
+}
+nav .nav-container .nav-menu {
   width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .wrapper nav .nav-container .nav-menu {
-    width: 70%;
-  }
-}
-@media (max-width: 900px) {
-  .wrapper nav .nav-container .nav-menu {
-    width: 30%;
-  }
-}
-.wrapper nav .nav-container .nav-menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
-}
-@media (max-width: 500px) {
-  .wrapper nav .nav-container .nav-menu a {
-    font-size: 1.2rem;
-  }
-}
-.wrapper .hero {
-  margin: 15% 0;
-  margin-left: 10%;
-}
-@media (max-width: 500px) {
-  .wrapper .hero {
-    padding-top: 75px;
-    margin-left: 2%;
-  }
-}
-.wrapper .hero img {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .wrapper .hero img {
+  nav .nav-container .nav-menu {
     width: 60%;
   }
 }
-.wrapper .hero p {
+@media (max-width: 900px) {
+  nav .nav-container .nav-menu {
+    width: 30%;
+  }
+}
+nav .nav-container .nav-menu a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  nav .nav-container .nav-menu a {
+    font-size: 1rem;
+  }
+}
+.hero {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  padding-bottom: 50%;
+  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero .hero-content {
+  position: relative;
+  padding-top: 15%;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .hero .hero-content {
+    padding-top: 60%;
+  }
+}
+.hero .hero-content img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .hero .hero-content img {
+    width: 60%;
+  }
+}
+.hero .hero-content p {
   color: white;
   margin-top: -2%;
   margin-bottom: 1%;
@@ -238,11 +243,11 @@ p {
   font-size: 1.4vw;
 }
 @media (max-width: 500px) {
-  .wrapper .hero p {
+  .hero .hero-content p {
     font-size: 1.1rem;
   }
 }
-.wrapper .hero .btn-get-started {
+.hero .hero-content .btn-get-started {
   background-color: white;
   color: #314b11;
   width: 15%;
@@ -255,12 +260,12 @@ p {
   padding: 1%;
   margin-left: 3%;
 }
-.wrapper .hero .btn-get-started:hover {
+.hero .hero-content .btn-get-started:hover {
   color: white;
   background-color: #314b11;
 }
 @media (max-width: 500px) {
-  .wrapper .hero .btn-get-started {
+  .hero .hero-content .btn-get-started {
     background-color: white;
     color: #314b11;
     width: 30%;
@@ -273,13 +278,13 @@ p {
     padding: 1%;
     padding: 2%;
   }
-  .wrapper .hero .btn-get-started:hover {
+  .hero .hero-content .btn-get-started:hover {
     color: white;
     background-color: #314b11;
   }
 }
 @media (max-width: 900px) {
-  .wrapper .hero .btn-get-started {
+  .hero .hero-content .btn-get-started {
     background-color: white;
     color: #314b11;
     width: 20%;
@@ -291,7 +296,7 @@ p {
     align-items: center;
     padding: 1%;
   }
-  .wrapper .hero .btn-get-started:hover {
+  .hero .hero-content .btn-get-started:hover {
     color: white;
     background-color: #314b11;
   }
