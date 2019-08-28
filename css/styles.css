@@ -151,6 +151,11 @@ h5 {
   font-family: 'Roboto', sans-serif;
   color: #707070;
 }
+h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 8rem;
+  color: white;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -488,7 +493,7 @@ nav .nav-container img {
 }
 nav .nav-container .nav-menu {
   width: 300px;
-  margin: 0 50px;
+  margin: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -581,7 +586,10 @@ section.storyCards .card .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 section.storyCards .card .content {
-  padding: 5%;
+  padding: 4% 7% 7%;
+}
+section.storyCards .card .content .credit {
+  padding: 3% 0;
 }
 .pagesNav .pagination {
   display: flex;
@@ -595,40 +603,6 @@ section.storyCards .card .content {
   color: #314b11;
   text-align: center;
   padding: 1%;
-}
-footer {
-  background-color: #314b11;
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-}
-footer .nav-container {
-  width: 40%;
-  margin: 2% 0 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-footer .nav-container img {
-  width: 100%;
-}
-footer .nav-container nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0 10px;
-}
-footer .nav-container nav a {
-  text-decoration: none;
-  color: white;
-  padding: 1%;
-  font-size: 1.4rem;
-}
-footer .nav-container nav p {
-  font-size: 1rem;
-  color: white;
 }
 footer {
   width: 100%;
