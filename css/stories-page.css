@@ -7,7 +7,6 @@ nav .nav-container {
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.5);
   z-index: 2;
 }
 nav .nav-container img {
@@ -23,7 +22,6 @@ nav .nav-container .nav-menu {
 }
 nav .nav-container .nav-menu a {
   text-decoration: none;
-  text-decoration-color: green;
 }
 .hero {
   width: 100%;
@@ -56,18 +54,10 @@ header div.stories-menu {
 header div.stories-menu a {
   margin: 5px;
   border-radius: 5px;
-  background: blue;
-  color: green;
-  border: 2px green;
   text-decoration: none;
   padding: 0.8% 5%;
 }
-header div.stories-menu a:hover {
-  background: grey;
-  color: green;
-}
 header div.stories-menu a:active {
-  background: green;
   color: white;
 }
 section.storyCards {
@@ -104,17 +94,16 @@ section.storyCards .card .content {
 }
 .pagesNav .pagination a {
   text-decoration: none;
-  text-decoration-color: green;
+  color: black;
   text-align: center;
   padding: 1%;
 }
 footer {
-  background-color: green;
   display: flex;
   justify-content: center;
 }
 footer .nav-container {
-  width: 220px;
+  width: 250px;
   margin: 2% 0 2%;
   display: flex;
   flex-direction: column;
@@ -131,7 +120,6 @@ footer .nav-container nav {
   justify-content: space-between;
 }
 footer .nav-container nav a {
+  color: black;
   text-decoration: none;
-  text-decoration-color: green;
-  padding: 1%;
 }
