@@ -82,7 +82,7 @@ body {
   }
 }
 .middle {
-  background: url('/images/guidr\ icon.svg') no-repeat;
+  background: url("../images/guidr\ icon.svg") no-repeat;
   background-size: 65% 65%;
   background-position: 150% 0%;
 }
@@ -156,7 +156,7 @@ body {
   border: none;
   padding: 6%;
   font-size: 2rem;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 0 auto;
 }
 footer {
