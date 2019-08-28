@@ -217,6 +217,7 @@ nav .nav-container .nav-menu a {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 20%;
+  padding-left: 5%;
 }
 @media (max-width: 500px) {
   .hero {
@@ -711,7 +712,7 @@ footer .nav-menu {
 }
 @media (max-width: 800px) {
   footer .nav-menu {
-    width: 50%;
+    width: 45%;
   }
 }
 @media (max-width: 500px) {
