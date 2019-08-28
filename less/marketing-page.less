@@ -1,6 +1,63 @@
 // Marketing Page Styles
 
-// Header Section
+.hero {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  padding-bottom: 50%;
+  background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  //   @media @mobile {
+  //     padding-top: 75px;
+  //     margin-left: 2%;
+  //   }
+
+  .hero-content {
+    position: relative;
+    padding-top: 15%;
+    margin-left: 10%;
+
+    @media @mobile {
+        padding-top: 60%;
+    }
+
+    img {
+        width: 40%;
+
+        @media @mobile {
+            width: 60%;
+        }
+    }
+
+    p {
+      color: white;
+      margin-top: -2%;
+      margin-bottom: 1%;
+      margin-left: 3%;
+      font-size: 1.4vw;
+
+      @media @mobile {
+        font-size: 1.1rem;
+      }
+    } // closes p
+    .btn-get-started {
+      .btn-solid(white, @button-color, 15%);
+      margin-left: 3%;
+
+      @media @mobile {
+        .btn-solid(white, @button-color, 30%);
+        padding: 2%;
+      } // closes mobile
+
+      @media @tablet {
+        .btn-solid(white, @button-color, 20%);
+      } // closes tablet
+    } // closes button
+  } // closes hero-content
+} // closes hero
 
 .header {
   width: 60%;
@@ -50,6 +107,10 @@
       margin: 20px;
     }
 
+    @media @tablet {
+      width: 100%;
+    }
+
     .btn-solid {
       background-color: @button-color;
       color: white;
@@ -78,6 +139,7 @@
 
       @media @mobile {
         margin-left: 0;
+        margin: 10px;
       }
     }
   }
@@ -106,6 +168,10 @@
       margin-bottom: 30%;
     }
 
+    @media @tablet {
+      text-align: center;
+    }
+
     h2 {
       font-size: 5rem;
       margin-top: 10%;
@@ -119,6 +185,10 @@
 
       @media @mobile {
         width: 75%;
+      }
+
+      @media @tablet {
+        width: 85%;
       }
     }
   } // closes top-content-text
@@ -140,8 +210,8 @@
     flex-wrap: wrap;
 
     @media @mobile {
-        margin-top:-20%;
-        width: 100%;
+      margin-top: -20%;
+      width: 100%;
     }
 
     .card {
@@ -152,7 +222,11 @@
       border-radius: 12px;
 
       @media @mobile {
-          width: 80%;
+        width: 80%;
+      }
+
+      @media @tablet {
+        width: 90%;
       }
 
       img {
@@ -197,7 +271,7 @@
     flex-wrap: wrap;
 
     @media @mobile {
-        width: 90%;
+      width: 90%;
     }
 
     .test-card {
@@ -210,7 +284,11 @@
       flex-wrap: wrap;
 
       @media @mobile {
-          width: 70%;
+        width: 70%;
+      }
+
+      @media @tablet {
+        width: 80%;
       }
 
       h2 {
@@ -220,8 +298,8 @@
         color: @secondary-font-color;
 
         @media @mobile {
-            margin-left: -70%;
-            padding-top: 10%;
+          margin-left: -70%;
+          padding-top: 10%;
         }
       } // closes h2
 
@@ -238,7 +316,7 @@
         font-size: 2.4rem;
 
         @media @mobile {
-            margin-right: -5%;
+          margin-right: -5%;
         }
       } // closes h3
 
@@ -247,7 +325,7 @@
         margin-right: -40%;
 
         @media @mobile {
-            margin-right: -5%;
+          margin-right: -5%;
         }
       }
     } // closes test-card
@@ -269,9 +347,9 @@
     padding-bottom: 5%;
 
     @media @mobile {
-        padding-top: 50%;
-        padding-bottom: 2%;
-        flex-direction: column;
+      padding-top: 50%;
+      padding-bottom: 2%;
+      flex-direction: column;
     }
 
     .plan-cards {
@@ -285,7 +363,11 @@
       flex-direction: column;
 
       @media @mobile {
-          width: 80%;
+        width: 80%;
+      }
+
+      @media @tablet {
+        width: 85%;
       }
 
       h1 {
