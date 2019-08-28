@@ -169,47 +169,36 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-nav {
+nav .nav-container {
   width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
   background-color: rgba(255, 255, 255, 0.4);
   z-index: 2;
 }
-nav .nav-container {
-  width: 100%;
+nav .nav-container img {
+  width: 100px;
+  margin: 0 30px;
+}
+@media (max-width: 500px) {
+  nav .nav-container img {
+    margin: 0 10px;
+  }
+}
+nav .nav-container .nav-menu {
+  width: 250px;
+  margin: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 500px) {
-  nav .nav-container {
-    margin: 0 10px;
-  }
-}
-@media (max-width: 900px) {
-  nav .nav-container {
-    margin: 0 20px;
-  }
-}
-nav .nav-container .nav-menu {
-  width: 20%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (max-width: 500px) {
   nav .nav-container .nav-menu {
-    width: 60%;
-  }
-}
-@media (max-width: 900px) {
-  nav .nav-container .nav-menu {
-    width: 30%;
+    margin: 0 10px 0 0;
   }
 }
 nav .nav-container .nav-menu a {
@@ -217,16 +206,10 @@ nav .nav-container .nav-menu a {
   color: #707070;
   font-size: 1.4rem;
 }
-@media (max-width: 500px) {
-  nav .nav-container .nav-menu a {
-    font-size: 1rem;
-  }
-}
 .hero {
   width: 100%;
   height: 600px;
   margin: auto;
-  padding-bottom: 50%;
   background-image: url(/images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,31 +676,6 @@ nav .nav-container .nav-menu a {
 body {
   margin: 0;
 }
-nav .nav-container {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.4);
-  z-index: 2;
-}
-nav .nav-container img {
-  width: 100px;
-  margin: 10px 30px;
-}
-nav .nav-container .nav-menu {
-  width: 300px;
-  margin: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .nav-container .nav-menu a {
-  text-decoration: none;
-  color: #707070;
-  font-size: 1.4rem;
-}
 .hero {
   width: 100%;
   height: 425px;
@@ -728,23 +686,33 @@ nav .nav-container .nav-menu a {
   align-items: center;
   text-align: center;
   background-image: url(/images/jeremy-goldberg-NFwDSMSq54Q-unsplash.jpg);
-  background-position: center center;
+  background-position: bottom 30% center;
   background-size: cover;
 }
 .hero .hero-inner {
-  color: white;
-  margin: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
 }
 .hero .hero-inner h1 {
-  margin: 0;
+  display: flex;
+  color: white;
+  margin: 0 auto;
 }
 header div.stories-menu {
   width: 60%;
-  margin: 50px auto;
+  margin: 4% auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 900px), (max-width: 500px) {
+  header div.stories-menu {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 header div.stories-menu a {
   margin: 5px;
@@ -772,12 +740,17 @@ section.storyCards {
   align-items: stretch;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   section.storyCards {
     width: 90vw;
     display: flex;
+  }
+}
+@media (max-width: 500px) {
+  section.storyCards {
+    width: 80vw;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }
 section.storyCards .card {
@@ -791,6 +764,7 @@ section.storyCards .card {
 @media (max-width: 500px) {
   section.storyCards .card {
     width: 100%;
+    margin: 4% auto;
   }
 }
 section.storyCards .card img {
@@ -858,12 +832,9 @@ footer .nav-menu a {
   color: white;
   font-size: 1.4rem;
 }
-footer p {
-  font-size: 1.2rem;
-  color: white;
-}
 @media (max-width: 500px) {
   footer .nav-menu a {
     font-size: 1.2rem;
+    color: white;
   }
-  }
+}
