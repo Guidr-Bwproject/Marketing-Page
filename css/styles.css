@@ -1,3 +1,9 @@
+@center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,6 +141,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #707070;
 }
 h1,
 h2,
@@ -144,11 +151,19 @@ h5 {
   font-family: 'Roboto', sans-serif;
   color: #707070;
 }
+h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 8rem;
+  color: white;
+}
 h2 {
   font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
+}
+h4 {
+  font-size: 2rem;
 }
 p {
   font-size: 1.6rem;
@@ -675,6 +690,135 @@ nav .nav-container .nav-menu a {
   padding: 3%;
   margin-left: 15px;
 }
+body {
+  margin: 0;
+}
+nav .nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+nav .nav-container img {
+  width: 100px;
+  margin: 10px 30px;
+}
+nav .nav-container .nav-menu {
+  width: 300px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .nav-menu a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.4rem;
+}
+.hero {
+  width: 100%;
+  height: 425px;
+  margin: 0 auto;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/images/jeremy-goldberg-NFwDSMSq54Q-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.hero .hero-inner {
+  color: white;
+  margin: 0 0 50px;
+}
+.hero .hero-inner h1 {
+  margin: 0;
+}
+header div.stories-menu {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header div.stories-menu a {
+  margin: 5px;
+  border-radius: 5px;
+  background: #efefef;
+  color: #707070;
+  text-decoration: none;
+  padding: 0.8% 5%;
+  font-size: 1.6rem;
+}
+header div.stories-menu a:hover {
+  background: #fff;
+  color: #314b11;
+  border: 3px solid #314b11;
+}
+header div.stories-menu a:active {
+  background: #314b11;
+  color: white;
+}
+section.storyCards {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  section.storyCards {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+section.storyCards .card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  justify-content: space-evenly;
+  margin: 3% 2%;
+}
+@media (max-width: 500px) {
+  section.storyCards .card {
+    width: 100%;
+  }
+}
+section.storyCards .card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+section.storyCards .card .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+section.storyCards .card .content {
+  padding: 4% 7% 7%;
+}
+section.storyCards .card .content .credit {
+  padding: 3% 0;
+}
+.pagesNav .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0 4%;
+}
+.pagesNav .pagination a {
+  text-decoration: none;
+  color: white;
+  color: #314b11;
+  text-align: center;
+  padding: 1%;
+}
 footer {
   width: 100%;
   background-color: #314b11;
@@ -714,8 +858,12 @@ footer .nav-menu a {
   color: white;
   font-size: 1.4rem;
 }
+footer p {
+  font-size: 1.2rem;
+  color: white;
+}
 @media (max-width: 500px) {
   footer .nav-menu a {
     font-size: 1.2rem;
   }
-}
+  }
