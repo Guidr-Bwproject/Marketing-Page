@@ -1,0 +1,94 @@
+.main-img {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.logo2 {
+  width: 80%;
+  height: auto;
+  padding-left: 30%;
+  padding-top: 5%;
+  margin-bottom: 40%;
+}
+@media screen and (max-width: 430px) {
+}
+.middle {
+  background: url("../images/guidr\ icon.svg") no-repeat;
+  background-size: 65% 65%;
+  background-position: 150% 0%;
+}
+.middle .top {
+  text-align: left;
+  margin: 0 auto;
+}
+.middle .top h1 {
+  font-size: 5rem;
+  color: #707070;
+  margin: 0;
+  padding: 6% 6% 0 6%;
+}
+.middle .top p {
+  padding: 0 6%;
+  color: #707070;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 430px) {
+  .middle .top {
+    margin-top: 20%;
+  }
+  .middle .top h1 {
+    font-size: 4rem;
+  }
+}
+.middle .cards {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  background: linear-gradient(rgba(224, 20, 20, 0) 40%, rgba(224, 20, 20, 0) 40%, #d3d2d218 18 40%, #d3d2d218 18 40%);
+}
+.middle .cards div {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 5%;
+  box-shadow: 1px 1px 15px 1px grey;
+  background: white;
+  border-radius: 0 0 10px 10px;
+}
+.middle .cards div h4 {
+  align-self: center;
+  font-size: 2rem;
+}
+.middle .cards div p {
+  margin: 3%;
+  color: #707070;
+}
+.middle .cards img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 430px) {
+  .middle .cards {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .middle .cards div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+}
+.middle button {
+  background: #314B11;
+  color: white;
+  width: 75%;
+  border: none;
+  padding: 6%;
+  font-size: 2rem;
+  border-radius: 25px;
+  margin: 0 auto;
+}
