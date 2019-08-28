@@ -199,12 +199,12 @@ p {
 }
 @media (max-width: 900px) {
   .wrapper nav .nav-container .nav-menu {
-    width: 50%;
+    width: 30%;
   }
 }
 .wrapper nav .nav-container .nav-menu a {
   text-decoration: none;
-  color: #707070;
+  color: white;
   font-size: 1.4rem;
 }
 @media (max-width: 500px) {
@@ -351,6 +351,11 @@ p {
     margin: 20px;
   }
 }
+@media (max-width: 900px) {
+  .header .buttons {
+    width: 100%;
+  }
+}
 .header .buttons .btn-solid {
   background-color: #314b11;
   color: white;
@@ -380,6 +385,7 @@ p {
 @media (max-width: 500px) {
   .header .buttons .btn-border {
     margin-left: 0;
+    margin: 10px;
   }
 }
 .top-content {
@@ -409,6 +415,11 @@ p {
     margin-bottom: 30%;
   }
 }
+@media (max-width: 900px) {
+  .top-content .top-content-text {
+    text-align: center;
+  }
+}
 .top-content .top-content-text h2 {
   font-size: 5rem;
   margin-top: 10%;
@@ -422,6 +433,11 @@ p {
 @media (max-width: 500px) {
   .top-content .top-content-text p {
     width: 75%;
+  }
+}
+@media (max-width: 900px) {
+  .top-content .top-content-text p {
+    width: 85%;
   }
 }
 .middle-content {
@@ -457,6 +473,11 @@ p {
 @media (max-width: 500px) {
   .middle-content .cards .card {
     width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .middle-content .cards .card {
+    width: 90%;
   }
 }
 .middle-content .cards .card img {
@@ -515,6 +536,11 @@ p {
 @media (max-width: 500px) {
   .testimonials .card-section .test-card {
     width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .testimonials .card-section .test-card {
+    width: 80%;
   }
 }
 .testimonials .card-section .test-card h2 {
@@ -593,6 +619,11 @@ p {
     width: 80%;
   }
 }
+@media (max-width: 900px) {
+  .plans-section .card-section .plan-cards {
+    width: 85%;
+  }
+}
 .plans-section .card-section .plan-cards h1 {
   color: #314b11;
   font-size: 5rem;
@@ -665,12 +696,12 @@ footer .nav-menu {
 }
 @media (max-width: 500px) {
   footer .nav-menu {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (max-width: 900px) {
   footer .nav-menu {
-    width: 50%;
+    width: 30%;
   }
 }
 footer .nav-menu a {
