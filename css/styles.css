@@ -171,24 +171,26 @@ p {
 }
 nav .nav-container {
   width: 100%;
+  height: 50px;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   z-index: 2;
 }
 nav .nav-container img {
   width: 100px;
-  margin: 10px 30px;
+  margin: 0 30px;
 }
 @media (max-width: 500px) {
   nav .nav-container img {
-    margin: 0 10px 0;
+    margin: 0 10px;
   }
 }
 nav .nav-container .nav-menu {
-  width: 300px;
+  width: 250px;
   margin: 0 30px;
   display: flex;
   justify-content: space-between;
@@ -196,7 +198,6 @@ nav .nav-container .nav-menu {
 }
 @media (max-width: 500px) {
   nav .nav-container .nav-menu {
-    width: 400px;
     margin: 0 10px 0 0;
   }
 }
@@ -707,7 +708,7 @@ header div.stories-menu {
   align-items: center;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px), (max-width: 500px) {
   header div.stories-menu {
     width: 100%;
     flex-wrap: wrap;
@@ -739,12 +740,17 @@ section.storyCards {
   align-items: stretch;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   section.storyCards {
     width: 90vw;
     display: flex;
+  }
+}
+@media (max-width: 500px) {
+  section.storyCards {
+    width: 80vw;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }
 section.storyCards .card {
@@ -758,6 +764,7 @@ section.storyCards .card {
 @media (max-width: 500px) {
   section.storyCards .card {
     width: 100%;
+    margin: 4% auto;
   }
 }
 section.storyCards .card img {
