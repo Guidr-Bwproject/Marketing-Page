@@ -150,7 +150,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    text-align: center;
     padding: 2%;
   }
 }
@@ -159,6 +159,11 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
+  @media @mobile {
+    flex-direction: column;
+    width: 50%;
+  }
+
   .teamMember {
     width: 25%;
     border-radius: 12px;
@@ -182,7 +187,7 @@
         color: @button-color;
       }
       p {
-        align-items: left;
+          text-align: center;
       }
     }
   }
