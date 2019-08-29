@@ -159,6 +159,10 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
+  @media @mobile, @tablet {
+    flex-direction: column;
+    width: 50%;
+  }
   .teamMember {
     width: 25%;
     border-radius: 12px;
