@@ -12,7 +12,6 @@
   padding-top: 20%;
   padding-left: 5%;
 
-
   @media @mobile {
     background-position-x: 65%;
   }
@@ -137,8 +136,8 @@
       &:hover {
         cursor: pointer;
         color: white;
-        background-color: #24380D;
-        border: solid 3px #24380D;
+        background-color: #24380d;
+        border: solid 3px #24380d;
       }
 
       @media @mobile {
@@ -165,8 +164,8 @@
       &:hover {
         cursor: pointer;
         color: white;
-        background-color: #24380D;
-        border: solid 3px #24380D;
+        background-color: #24380d;
+        border: solid 3px #24380d;
       }
 
       @media @mobile {
@@ -388,13 +387,14 @@
 
     .plan-cards {
       width: 35%;
-      height: 500px;
+      height: 700px;
       margin: 20px;
       border-radius: 12px;
       background-color: white;
-      // background-size: 100%;
-      .flex(flex-start, center);
+      background-size: 100%;
+      .flex(center, stretch);
       flex-direction: column;
+      text-align: center;
 
       @media @mobile {
         width: 80%;
@@ -407,76 +407,78 @@
       h1 {
         color: @secondary-font-color;
         font-size: 5rem;
-        text-align: center;
         padding-top: 10%;
+        margin: 0 auto;
       } // closes h1
 
       h2 {
         color: @secondary-font-color;
         padding-top: 2%;
+        padding-bottom: 2%;
       } // closes h2
 
-      ul {
+      li {
+        width: 60%;
         color: @main-font-color;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 10%;
+        text-align: left;
+        margin: 0 auto;
       } // closes ul
 
       .buttons {
-        .flex(center, center);
+        .flex(flex-end, center);
         flex-direction: row;
         width: 60%;
         margin: auto;
-      }
 
-      .btn-solid {
-        background-color: @button-color;
-        justify-content: flex-end;
-        color: white;
-        width: 100%;
-        border-radius: 10px;
-        border: solid 3px @button-color;
-        font-size: 2rem;
-        padding: 3%;
-        margin-right: 15px;
-        margin-top: 100px;
-        text-align: center;
-
-        a {
-          text-decoration: none;
+        .btn-solid {
+          background-color: @button-color;
           color: white;
-        }
+          width: 100%;
+          border-radius: 10px;
+          border: solid 3px @button-color;
+          font-size: 2rem;
+          padding: 3%;
+          margin-right: 15px;
+          text-align: center;
 
-        &:hover {
-          cursor: pointer;
-          color: white;
-          background-color: #24380D;
-          border: solid 3px #24380D;
-        }
-      }
+          a {
+            text-decoration: none;
+            color: white;
+          }
 
-      .btn-border {
-        background-color: white;
-        color: @button-color;
-        width: 100%;
-        border-radius: 10px;
-        border: solid 3px @button-color;
-        font-size: 2rem;
-        padding: 3%;
-        margin-left: 15px;
+          &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #24380d;
+            border: solid 3px #24380d;
+          }
+        } // closes btn-solid;
 
-        a {
-          text-decoration: none;
-          color: @secondary-font-color;
-        }
+        .btn-border {
+          background-color: white;
+          color: @button-color;
+          width: 100%;
+          border-radius: 10px;
+          border: solid 3px @button-color;
+          font-size: 2rem;
+          padding: 3%;
+          margin-left: 15px;
 
-        &:hover {
-          cursor: pointer;
-          color: white;
-          background-color: #24380D;
-          border: solid 3px #24380D;
-        }
-      }
+          a {
+            text-decoration: none;
+            color: @secondary-font-color;
+          }
+
+          &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #24380d;
+            border: solid 3px #24380d;
+          }
+        } //closes btn-border
+      } // closes buttons
     } // closes plan-cards
   } // closes card-section
 } // closes plans-section

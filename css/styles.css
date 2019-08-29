@@ -403,8 +403,8 @@ nav .nav-container .nav-menu a {
 .header .buttons .btn-solid:hover {
   cursor: pointer;
   color: white;
-  background-color: #24380D;
-  border: solid 3px #24380D;
+  background-color: #24380d;
+  border: solid 3px #24380d;
 }
 @media (max-width: 500px) {
   .header .buttons .btn-solid {
@@ -429,8 +429,8 @@ nav .nav-container .nav-menu a {
 .header .buttons .btn-border:hover {
   cursor: pointer;
   color: white;
-  background-color: #24380D;
-  border: solid 3px #24380D;
+  background-color: #24380d;
+  border: solid 3px #24380d;
 }
 @media (max-width: 500px) {
   .header .buttons .btn-border {
@@ -657,14 +657,16 @@ nav .nav-container .nav-menu a {
 }
 .plans-section .card-section .plan-cards {
   width: 35%;
-  height: 500px;
+  height: 700px;
   margin: 20px;
   border-radius: 12px;
   background-color: white;
+  background-size: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
   flex-direction: column;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .plans-section .card-section .plan-cards {
@@ -679,29 +681,32 @@ nav .nav-container .nav-menu a {
 .plans-section .card-section .plan-cards h1 {
   color: #314b11;
   font-size: 5rem;
-  text-align: center;
   padding-top: 10%;
+  margin: 0 auto;
 }
 .plans-section .card-section .plan-cards h2 {
   color: #314b11;
   padding-top: 2%;
+  padding-bottom: 2%;
 }
-.plans-section .card-section .plan-cards ul {
+.plans-section .card-section .plan-cards li {
+  width: 60%;
   color: #707070;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 10%;
+  text-align: left;
+  margin: 0 auto;
 }
 .plans-section .card-section .plan-cards .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   width: 60%;
   margin: auto;
 }
-.plans-section .card-section .plan-cards .btn-solid {
+.plans-section .card-section .plan-cards .buttons .btn-solid {
   background-color: #314b11;
-  justify-content: flex-end;
   color: white;
   width: 100%;
   border-radius: 10px;
@@ -709,20 +714,19 @@ nav .nav-container .nav-menu a {
   font-size: 2rem;
   padding: 3%;
   margin-right: 15px;
-  margin-top: 100px;
   text-align: center;
 }
-.plans-section .card-section .plan-cards .btn-solid a {
+.plans-section .card-section .plan-cards .buttons .btn-solid a {
   text-decoration: none;
   color: white;
 }
-.plans-section .card-section .plan-cards .btn-solid:hover {
+.plans-section .card-section .plan-cards .buttons .btn-solid:hover {
   cursor: pointer;
   color: white;
-  background-color: #24380D;
-  border: solid 3px #24380D;
+  background-color: #24380d;
+  border: solid 3px #24380d;
 }
-.plans-section .card-section .plan-cards .btn-border {
+.plans-section .card-section .plan-cards .buttons .btn-border {
   background-color: white;
   color: #314b11;
   width: 100%;
@@ -732,15 +736,15 @@ nav .nav-container .nav-menu a {
   padding: 3%;
   margin-left: 15px;
 }
-.plans-section .card-section .plan-cards .btn-border a {
+.plans-section .card-section .plan-cards .buttons .btn-border a {
   text-decoration: none;
   color: #314b11;
 }
-.plans-section .card-section .plan-cards .btn-border:hover {
+.plans-section .card-section .plan-cards .buttons .btn-border:hover {
   cursor: pointer;
   color: white;
-  background-color: #24380D;
-  border: solid 3px #24380D;
+  background-color: #24380d;
+  border: solid 3px #24380d;
 }
 .about-hero {
   width: 100%;
