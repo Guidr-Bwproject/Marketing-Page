@@ -266,10 +266,9 @@ nav .nav-container .nav-menu a {
   margin-left: 3%;
 }
 .hero .btn-get-started:hover {
-  color: white;
-  background-color: #314b11;
   cursor: pointer;
-  transition: 0.4s;
+  color: white;
+  background-color: #24380D;
 }
 @media (max-width: 800px) {
   .hero .btn-get-started {
@@ -285,10 +284,9 @@ nav .nav-container .nav-menu a {
     padding: 1%;
   }
   .hero .btn-get-started:hover {
-    color: white;
-    background-color: #314b11;
     cursor: pointer;
-    transition: 0.4s;
+    color: white;
+    background-color: #24380D;
   }
 }
 @media (max-width: 500px) {
@@ -306,10 +304,10 @@ nav .nav-container .nav-menu a {
     padding: 2%;
   }
   .hero .btn-get-started:hover {
-    color: white;
-    background-color: #314b11;
     cursor: pointer;
-    transition: 0.4s;
+    color: white;
+    background-color: #24380D;
+
   }
 }
 @media (max-width: 800px) {
@@ -395,6 +393,12 @@ nav .nav-container .nav-menu a {
   padding: 3%;
   margin-right: 15px;
 }
+.header .buttons .btn-solid:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #24380D;
+  border: solid 3px #24380D;
+}
 @media (max-width: 500px) {
   .header .buttons .btn-solid {
     margin-right: 0;
@@ -410,6 +414,12 @@ nav .nav-container .nav-menu a {
   font-size: 2rem;
   padding: 3%;
   margin-left: 10px;
+}
+.header .buttons .btn-border:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #24380D;
+  border: solid 3px #24380D;
 }
 @media (max-width: 500px) {
   .header .buttons .btn-border {
@@ -691,6 +701,12 @@ nav .nav-container .nav-menu a {
   margin-top: 100px;
   text-align: center;
 }
+.plans-section .card-section .plan-cards .btn-solid:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #24380D;
+  border: solid 3px #24380D;
+}
 .plans-section .card-section .plan-cards .btn-border {
   background-color: white;
   color: #314b11;
@@ -700,6 +716,12 @@ nav .nav-container .nav-menu a {
   font-size: 2rem;
   padding: 3%;
   margin-left: 15px;
+}
+.plans-section .card-section .plan-cards .btn-border:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #24380D;
+  border: solid 3px #24380D;
 }
 .main-img {
   width: 100%;
