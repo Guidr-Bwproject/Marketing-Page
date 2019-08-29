@@ -310,7 +310,7 @@ nav .nav-container .nav-menu a {
 }
 @media (max-width: 500px) {
   .hero {
-    padding-top: 45%;
+    padding-top: 50%;
     padding-left: 3%;
   }
 }
@@ -321,6 +321,7 @@ nav .nav-container .nav-menu a {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .header {
