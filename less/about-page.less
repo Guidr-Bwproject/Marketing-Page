@@ -146,7 +146,6 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    margin: 0 auto;
 
     @media @mobile {
       flex-direction: column;
@@ -168,15 +167,18 @@
       img {
         width: 100%;
         border-radius: 12px 12px 0 0;
-      }
-      .content {
-        padding: 5%;
-        padding: 5%;
-        h4 {
-          font-size: 1.8rem;
-          color: @button-color;
-        } // closes content h4
-      } //closes content
-    } //closes teamMember
-  } //closes grid
-} //closes team
+        p {
+          text-align: center;
+        }
+        .content {
+          padding: 5%;
+          padding: 5%;
+          h4 {
+            font-size: 1.8rem;
+            color: @button-color;
+          } // closes content h4
+        } //closes content
+      } //closes teamMember
+    } //closes grid
+  } //closes team
+}

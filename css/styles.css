@@ -884,10 +884,13 @@ nav .nav-container .nav-menu a {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-.theTeam .grid .teamMember .content {
+.theTeam .grid .teamMember img p {
+  text-align: center;
+}
+.theTeam .grid .teamMember img .content {
   padding: 5%;
 }
-.theTeam .grid .teamMember .content h4 {
+.theTeam .grid .teamMember img .content h4 {
   font-size: 1.8rem;
   color: #314b11;
 }
