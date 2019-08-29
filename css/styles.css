@@ -307,7 +307,6 @@ nav .nav-container .nav-menu a {
     cursor: pointer;
     color: white;
     background-color: #24380D;
-
   }
 }
 @media (max-width: 800px) {
@@ -723,74 +722,74 @@ nav .nav-container .nav-menu a {
   background-color: #24380D;
   border: solid 3px #24380D;
 }
-.main-img {
+.about-hero {
   width: 100%;
-  position: absolute;
-  top: 0px;
-  z-index: -1;
-}
-.logo2 {
-  width: 80%;
-  height: auto;
-  padding-left: 30%;
-  padding-top: 5%;
-  margin-bottom: 45%;
+  height: 600px;
+  margin: auto;
+  background-image: url(/images/koushik-chowdavarapu-OsjPhfgEYEU-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+  text-align: center;
 }
 @media (max-width: 500px) {
-  .logo2 {
-    padding-top: 15%;
-    margin-bottom: 15%;
+  .about-hero {
+    height: 400px;
+    background-position-x: 65%;
+    padding-top: 25%;
   }
 }
-.middle .top {
-  width: 60%;
-  text-align: left;
-  margin: 0 auto;
-  padding-bottom: 300px;
+.about-hero img {
+  width: 40%;
 }
-.middle .top h1 {
-  font-size: 5rem;
+@media (max-width: 500px) {
+  .about-hero img {
+    width: 60%;
+  }
+}
+.about-text {
+  width: 60%;
   text-align: center;
+  margin: auto;
+  margin-bottom: 20%;
+}
+@media (max-width: 500px) {
+  .about-text {
+    width: 80%;
+    padding-bottom: 2px;
+  }
+}
+.about-text h1 {
+  font-size: 4rem;
   color: #707070;
-  margin: 0;
   padding: 10% 0 3% 0;
 }
-.middle .top p {
+.about-text p {
   color: #707070;
-  margin-bottom: 10%;
-  text-align: center;
 }
-@media screen and (max-width: 430px) {
-  .middle .top {
-    margin-top: 20%;
-  }
-  .middle .top h1 {
-    font-size: 4rem;
-  }
-}
-.middle .cards-bg {
+.about-middle-content {
   background-color: #efefef;
   width: 100%;
   border: solid #efefef;
 }
-.middle .cards-bg .cards {
+.about-middle-content .about-cards {
   z-index: 1;
   width: 90%;
   margin: auto;
-  margin-top: -35%;
+  margin-top: -15%;
   margin-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .middle .cards-bg .cards {
+  .about-middle-content .about-cards {
     margin-top: -20%;
     width: 100%;
   }
 }
-.middle .cards-bg .about-card {
+.about-middle-content .about-cards .about-card {
   width: 40%;
   height: auto;
   background: white;
@@ -798,35 +797,31 @@ nav .nav-container .nav-menu a {
   flex-direction: column;
   padding: 0;
   padding-bottom: 5%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   margin: 20px;
   box-shadow: 1px 1px 2px -1px grey;
 }
-.middle .cards-bg .about-card img {
+@media (max-width: 500px) {
+  .about-middle-content .about-cards .about-card {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about-middle-content .about-cards .about-card img {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-.middle .cards-bg .about-card h2 {
+.about-middle-content .about-cards .about-card h2 {
   padding: 5%;
   color: #314b11;
 }
-.middle .cards-bg .about-card p {
+.about-middle-content .about-cards .about-card p {
   padding: 0 5%;
   margin-bottom: 20%;
 }
-@media screen and (max-width: 430px) {
-  .middle .cards-bg {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .middle .cards-bg div {
-    width: 100%;
-    height: auto;
-    margin-bottom: 5%;
-  }
-}
-.middle button {
-  background: #314B11;
+.about-middle-content .about-cards .about-card button {
+  background: #314b11;
   color: white;
   width: 55%;
   border: none;
@@ -835,9 +830,18 @@ nav .nav-container .nav-menu a {
   border-radius: 12px;
   margin: 0 auto;
 }
+.about-middle-content .about-cards .about-card button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #24380d;
+}
+.theTeam {
+  margin: 5% auto;
+  padding-bottom: 5%;
+  text-align: center;
+}
 .theTeam h2 {
   color: #314b11;
-  display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -848,22 +852,21 @@ nav .nav-container .nav-menu a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 2%;
 }
-.grid {
+.theTeam .grid {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .grid {
+  .theTeam .grid {
     flex-direction: column;
     width: 50%;
   }
 }
-.grid .teamMember {
+.theTeam .grid .teamMember {
   width: 25%;
   border-radius: 12px;
   transition: 0.3s;
@@ -872,24 +875,24 @@ nav .nav-container .nav-menu a {
   box-shadow: 1px 1px 2px -1px grey;
 }
 @media (max-width: 500px) {
-  .grid .teamMember {
+  .theTeam .grid .teamMember {
     width: 100%;
     margin: 4% auto;
   }
 }
-.grid .teamMember img {
+.theTeam .grid .teamMember img {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-.grid .teamMember .content {
+.theTeam .grid .teamMember img p {
+  text-align: center;
+}
+.theTeam .grid .teamMember img .content {
   padding: 5%;
 }
-.grid .teamMember .content h4 {
+.theTeam .grid .teamMember img .content h4 {
   font-size: 1.8rem;
   color: #314b11;
-}
-.grid .teamMember .content p {
-  text-align: center;
 }
 .stories-hero {
   width: 100%;

@@ -1,127 +1,108 @@
-.main-img {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-}
+.about-hero {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  // padding-bottom: 50%;
+  background-image: url(/images/koushik-chowdavarapu-OsjPhfgEYEU-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10%;
+  text-align: center;
 
-// main img
+  @media @mobile {
+    height: 400px;
+    background-position-x: 65%;
+    padding-top: 25%;
+  }
 
-.logo2 {
-    width: 80%;
-    height: auto;
-    padding-left: 30%;
-    padding-top: 5%;
-    margin-bottom: 45%;
-
+  img {
+    width: 40%;
 
     @media @mobile {
-        padding-top: 15%;
-        margin-bottom: 15%;
+      width: 60%;
     }
+  }
 }
 
-.middle {
-   
+.about-text {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20%;
 
-    .top {
-        width: 60%;
-        text-align: left;
-        margin: 0 auto;
-        padding-bottom: 300px;
+  @media @mobile {
+    width: 80%;
+    padding-bottom: 2px;
+  } // closes about-text mq
 
-        h1 {
-            font-size: 5rem;
-            text-align: center;
-            color: #707070;
-            margin: 0;
-            padding: 10% 0 3% 0;
-        }
+  h1 {
+    font-size: 4rem;
+    color: @main-font-color;
+    padding: 10% 0 3% 0;
+  } // closes about-text h1
+  p {
+    color: @main-font-color;
+  } // closes about-text p
 
-        p {
-            color: #707070;
-            margin-bottom: 10%;
-            text-align: center;
-        }
+  // @media @mobile {
+  //   margin-top: 10%;
+  // } // not sure about this??
+} // closes about-text
 
-        @media screen and (max-width: 430px) {
-            margin-top: 20%;
-
-            h1 {
-                font-size: 4rem;
-            }
-        }
-    }
-
-    .cards-bg{
-        background-color: @section-color;
+.about-middle-content {
+  background-color: @section-color;
   width: 100%;
   border: solid @section-color;
 
-        .cards {
-            z-index: 1;
-            width: 90%;
-            margin: auto;
-            margin-top: -35%;
-            margin-bottom: 5%;
-            .flex(center, stretch);
-            flex-wrap: wrap;
+  .about-cards {
+    z-index: 1;
+    width: 90%;
+    margin: auto;
+    margin-top: -15%;
+    margin-bottom: 5%;
+    .flex(center, stretch);
 
+    @media @mobile {
+      margin-top: -20%;
+      width: 100%;
+    } // closes media query
 
-            @media @mobile {
-            margin-top: -20%;
-            width: 100%;
-            }
-        }
+    .about-card {
+      width: 40%;
+      height: auto;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-bottom: 5%;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 1px 1px 2px -1px grey;
 
-        .about-card {
-            width: 40%;
-            height: auto;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            padding-bottom: 5%;
-            border-radius: 0 0 10px 10px;
-            margin: 20px;
-            box-shadow: 1px 1px 2px -1px grey;
-        
+      @media @mobile {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+      }
 
-            img {
-                width: 100%;
-                border-radius: 12px 12px 0 0;
-            }
+      img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+      }
 
-            h2 {
-                padding: 5%;
-                color: @secondary-font-color;
-            }
+      h2 {
+        padding: 5%;
+        color: @secondary-font-color;
+      }
 
-            p {
-                padding: 0 5%;
-                margin-bottom: 20%;
-            }
+      p {
+        padding: 0 5%;
+        margin-bottom: 20%;
+      }
 
-            ;
-
-        }
-
-        
-
-        @media screen and (max-width: 430px) {
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            div {
-                width: 100%;
-                height: auto;
-                margin-bottom: 5%;
-            }
-        }
-    }
-
-    button {
-        background: #314B11;
+      button {
+        background: #314b11;
         color: white;
         width: 55%;
         border: none;
@@ -129,17 +110,24 @@
         font-size: 2rem;
         border-radius: 12px;
         margin: 0 auto;
-        
 
-
-    }
-
-}
+        &:hover {
+          cursor: pointer;
+          color: white;
+          background-color: #24380d;
+        } // closes hover
+      } // closes button
+    } // closes about-card
+  } // closes card
+} // closes card-bg
 
 .theTeam {
+  margin: 5% auto;
+  padding-bottom: 5%;
+  text-align: center;
   h2 {
     color: @button-color;
-    display:flex;
+    color: @button-color;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -150,45 +138,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 2%;
   }
-}
-.grid {
-  width: 80%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  @media @mobile {
-    flex-direction: column;
-    width: 50%;
-  }
 
-  .teamMember {
-    width: 25%;
-    border-radius: 12px;
-    transition: 0.3s;
+  .grid {
+    width: 80%;
+    display: flex;
     justify-content: space-evenly;
-    margin: 3% 2%;
-    box-shadow: 1px 1px 2px -1px grey;
+    margin: 0 auto;
+
     @media @mobile {
-      width: 100%;
-      margin: 4% auto;
+      flex-direction: column;
+      width: 50%;
     }
-    img {
-      width: 100%;
-      border-radius: 12px 12px 0 0;
-    }
-    .content {
-      padding: 5%;
-      
-      h4 {
-        font-size: 1.8rem;
-        color: @button-color;
+
+    .teamMember {
+      width: 25%;
+      border-radius: 12px;
+      transition: 0.3s;
+      justify-content: space-evenly;
+      margin: 3% 2%;
+      box-shadow: 1px 1px 2px -1px grey;
+      box-shadow: 1px 1px 2px -1px grey;
+      @media @mobile {
+        width: 100%;
+        margin: 4% auto;
       }
-      p {
+      img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        p {
           text-align: center;
-      }
-    }
-  }
+        }
+        .content {
+          padding: 5%;
+          padding: 5%;
+          h4 {
+            font-size: 1.8rem;
+            color: @button-color;
+          } // closes content h4
+        } //closes content
+      } //closes teamMember
+    } //closes grid
+  } //closes team
 }
