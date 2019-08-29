@@ -270,6 +270,10 @@ nav .nav-container .nav-menu a {
   color: white;
   background-color: #24380D;
 }
+.hero .btn-get-started a {
+  text-decoration: none;
+  color: #314b11;
+}
 @media (max-width: 800px) {
   .hero .btn-get-started {
     background-color: white;
@@ -392,6 +396,10 @@ nav .nav-container .nav-menu a {
   padding: 3%;
   margin-right: 15px;
 }
+.header .buttons .btn-solid a {
+  text-decoration: none;
+  color: white;
+}
 .header .buttons .btn-solid:hover {
   cursor: pointer;
   color: white;
@@ -413,6 +421,10 @@ nav .nav-container .nav-menu a {
   font-size: 2rem;
   padding: 3%;
   margin-left: 10px;
+}
+.header .buttons .btn-border a {
+  text-decoration: none;
+  color: #314b11;
 }
 .header .buttons .btn-border:hover {
   cursor: pointer;
@@ -700,6 +712,10 @@ nav .nav-container .nav-menu a {
   margin-top: 100px;
   text-align: center;
 }
+.plans-section .card-section .plan-cards .btn-solid a {
+  text-decoration: none;
+  color: white;
+}
 .plans-section .card-section .plan-cards .btn-solid:hover {
   cursor: pointer;
   color: white;
@@ -715,6 +731,10 @@ nav .nav-container .nav-menu a {
   font-size: 2rem;
   padding: 3%;
   margin-left: 15px;
+}
+.plans-section .card-section .plan-cards .btn-border a {
+  text-decoration: none;
+  color: #314b11;
 }
 .plans-section .card-section .plan-cards .btn-border:hover {
   cursor: pointer;
