@@ -807,6 +807,8 @@ nav .nav-container .nav-menu a {
   .about-middle-content .about-cards {
     margin-top: -20%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .about-middle-content .about-cards .about-card {
@@ -1005,6 +1007,10 @@ section.storyCards .card {
     margin: 4% auto;
   }
 }
+section.storyCards .card a {
+  text-decoration: none!important;
+  color: #707070;
+}
 section.storyCards .card img {
   width: 100%;
   border-radius: 12px 12px 0 0;
@@ -1026,7 +1032,6 @@ section.storyCards .card .content .credit {
 }
 .pagesNav .pagination a {
   text-decoration: none;
-  color: white;
   color: #314b11;
   text-align: center;
   padding: 1%;
