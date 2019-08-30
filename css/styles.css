@@ -457,6 +457,7 @@ nav .nav-container .nav-menu a {
   flex-direction: column;
   margin: auto;
   margin-bottom: 10%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .top-content .top-content-text {
@@ -476,9 +477,9 @@ nav .nav-container .nav-menu a {
   color: #314b11;
 }
 .top-content .top-content-text p {
-  width: 60%;
+  width: 80%;
   text-align: center;
-  padding: 3%;
+  padding: 5%;
 }
 @media (max-width: 500px) {
   .top-content .top-content-text p {
@@ -505,11 +506,16 @@ nav .nav-container .nav-menu a {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .middle-content .cards {
+    flex-wrap: none;
+  }
 }
 @media (max-width: 500px) {
   .middle-content .cards {
     margin-top: -20%;
+    flex-wrap: wrap;
     width: 100%;
   }
 }
@@ -575,14 +581,14 @@ nav .nav-container .nav-menu a {
 }
 .testimonials .card-section .test-card {
   width: 45%;
+  height: 300px;
   margin: 20px;
   border-radius: 12px;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #efefef;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   box-shadow: 1px 1px 2px -1px grey;
 }
 @media (max-width: 800px) {
@@ -592,11 +598,12 @@ nav .nav-container .nav-menu a {
 }
 @media (max-width: 500px) {
   .testimonials .card-section .test-card {
-    width: 70%;
+    width: 80%;
   }
 }
 .testimonials .card-section .test-card h2 {
-  margin-left: -90%;
+  margin-top: 5%;
+  margin-left: -80%;
   padding: 5%;
   font-size: 3.4rem;
   color: #314b11;
@@ -604,32 +611,54 @@ nav .nav-container .nav-menu a {
 @media (max-width: 500px) {
   .testimonials .card-section .test-card h2 {
     margin-left: -70%;
-    padding-top: 10%;
+    padding-top: -20%;
   }
 }
 .testimonials .card-section .test-card p {
+  margin-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.8rem;
   color: #707070;
 }
+@media (max-width: 800px) {
+  .testimonials .card-section .test-card p {
+    width: 90%;
+    font-size: 1.6rem;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .testimonials .card-section .test-card p {
+    font-size: 1rem;
+  }
+}
 .testimonials .card-section .test-card h3 {
   color: #314b11;
-  margin-right: -20%;
+  margin-right: 20%;
   font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  .testimonials .card-section .test-card h3 {
+    margin-right: 10%;
+  }
 }
 @media (max-width: 500px) {
   .testimonials .card-section .test-card h3 {
-    margin-right: -5%;
+    margin-right: 45%;
+    font-size: 1.2rem;
   }
 }
 .testimonials .card-section .test-card .test-card-profile-photo {
+  z-index: 2;
   padding: 5%;
-  margin-right: -20%;
+  margin-right: -40%;
+  margin-top: -20%;
 }
 @media (max-width: 500px) {
   .testimonials .card-section .test-card .test-card-profile-photo {
     margin-right: -5%;
+    width: 30%;
   }
 }
 .plans-section {
@@ -679,31 +708,28 @@ nav .nav-container .nav-menu a {
     width: 80%;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card {
-  position: absolute;
-}
-.plans-section .card-section .plan-cards-bg .plan-card h1 {
+.plans-section .card-section .plan-cards-bg h1 {
   color: #314b11;
   font-size: 5rem;
   padding-top: 10%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card h1 {
+  .plans-section .card-section .plan-cards-bg h1 {
     font-size: 3rem;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card h2 {
+.plans-section .card-section .plan-cards-bg h2 {
   color: #314b11;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card h2 {
+  .plans-section .card-section .plan-cards-bg h2 {
     font-size: 2rem;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card ul {
+.plans-section .card-section .plan-cards-bg ul {
   width: 60%;
   height: 500px;
   color: #707070;
@@ -714,13 +740,13 @@ nav .nav-container .nav-menu a {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card ul {
+  .plans-section .card-section .plan-cards-bg ul {
     line-height: 1.5;
     font-size: 1rem;
     height: 240px;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons {
+.plans-section .card-section .plan-cards-bg .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -730,11 +756,11 @@ nav .nav-container .nav-menu a {
   padding-bottom: 15%;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card .buttons {
+  .plans-section .card-section .plan-cards-bg .buttons {
     width: 40%;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-solid {
+.plans-section .card-section .plan-cards-bg .buttons .btn-solid {
   background-color: #314b11;
   color: white;
   width: 100%;
@@ -745,23 +771,23 @@ nav .nav-container .nav-menu a {
   margin-right: 15px;
   text-align: center;
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-solid a {
+.plans-section .card-section .plan-cards-bg .buttons .btn-solid a {
   text-decoration: none;
   color: white;
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-solid:hover {
+.plans-section .card-section .plan-cards-bg .buttons .btn-solid:hover {
   cursor: pointer;
   color: white;
   background-color: #24380d;
   border: solid 3px #24380d;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-solid {
+  .plans-section .card-section .plan-cards-bg .buttons .btn-solid {
     margin-right: 0;
     font-size: 1.6rem;
   }
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-border {
+.plans-section .card-section .plan-cards-bg .buttons .btn-border {
   background-color: white;
   color: #314b11;
   width: 100%;
@@ -771,24 +797,24 @@ nav .nav-container .nav-menu a {
   padding: 3%;
   margin-left: 15px;
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-border a {
+.plans-section .card-section .plan-cards-bg .buttons .btn-border a {
   text-decoration: none;
   color: #314b11;
 }
-.plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-border:hover {
+.plans-section .card-section .plan-cards-bg .buttons .btn-border:hover {
   cursor: pointer;
   color: white;
   background-color: #24380d;
   border: solid 3px #24380d;
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card .buttons .btn-border {
+  .plans-section .card-section .plan-cards-bg .buttons .btn-border {
     margin-left: 0;
     font-size: 1.6rem;
   }
 }
 @media (max-width: 500px) {
-  .plans-section .card-section .plan-cards-bg .plan-card .buttons {
+  .plans-section .card-section .plan-cards-bg .buttons {
     width: 70%;
   }
 }
