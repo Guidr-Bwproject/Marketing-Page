@@ -380,105 +380,149 @@
     padding-bottom: 5%;
 
     @media @mobile {
-      padding-top: 50%;
+      padding-top: 70%;
       padding-bottom: 2%;
       flex-direction: column;
     }
 
-    .plan-cards {
+    .plan-cards-bg {
       width: 35%;
       height: 700px;
       margin: 20px;
       border-radius: 12px;
       background-color: white;
       background-size: 100%;
-      .flex(center, stretch);
+      .flex(center, center);
       flex-direction: column;
       text-align: center;
-
-      @media @mobile {
-        width: 80%;
-      }
+      // overflow: hidden;
+      position: relative;
 
       @media @tablet {
         width: 85%;
       }
 
-      h1 {
-        color: @secondary-font-color;
-        font-size: 5rem;
-        padding-top: 10%;
-        margin: 0 auto;
-      } // closes h1
+      @media @mobile {
+        width: 80%;
+      }
 
-      h2 {
-        color: @secondary-font-color;
-        padding-top: 2%;
-        padding-bottom: 2%;
-      } // closes h2
+      .plan-card {
+        position: absolute;
+        max-height: 400px;
+    
+        h1 {
+          color: @secondary-font-color;
+          font-size: 5rem;
+          padding-top: 10%;
+          margin: 0 auto;
 
-      li {
-        width: 60%;
-        color: @main-font-color;
-        font-size: 1.5rem;
-        padding-top: 10%;
-        text-align: left;
-        margin: 0 auto;
-      } // closes ul
+          @media @mobile {
+            font-size: 3rem;
+          }
+        } // closes h1
 
-      .buttons {
-        .flex(flex-end, center);
-        flex-direction: row;
-        width: 60%;
-        margin: auto;
+        h2 {
+          color: @secondary-font-color;
+          padding-top: 2%;
+          padding-bottom: 2%;
 
-        .btn-solid {
-          background-color: @button-color;
-          color: white;
-          width: 100%;
-          border-radius: 10px;
-          border: solid 3px @button-color;
-          font-size: 2rem;
-          padding: 3%;
-          margin-right: 15px;
-          text-align: center;
+          @media @mobile {
+            font-size: 2rem;
+          }
+        } // closes h2
 
-          a {
-            text-decoration: none;
+        ul {
+          width: 60%;
+          height: 240px;
+          color: @main-font-color;
+          font-size: 1.5rem;
+          line-height: 2;
+          padding-top: 10%;
+          text-align: left;
+          margin: 0 auto;
+
+          @media @mobile {
+            line-height: 1.5;
+            font-size: 1.0rem;
+          }
+        } // closes ul
+
+        .buttons {
+          .flex(center, center);
+          flex-direction: row;
+          width: 60%;
+          margin: auto;
+          padding-bottom: 15%;
+
+          @media  @mobile {
+            width: 40%;
+          }
+
+          .btn-solid {
+            background-color: @button-color;
             color: white;
-          }
+            width: 100%;
+            border-radius: 10px;
+            border: solid 3px @button-color;
+            font-size: 2rem;
+            padding: 3%;
+            margin-right: 15px;
+            text-align: center;
 
-          &:hover {
-            cursor: pointer;
-            color: white;
-            background-color: #24380d;
-            border: solid 3px #24380d;
-          }
-        } // closes btn-solid;
+            a {
+              text-decoration: none;
+              color: white;
+            }
 
-        .btn-border {
-          background-color: white;
-          color: @button-color;
-          width: 100%;
-          border-radius: 10px;
-          border: solid 3px @button-color;
-          font-size: 2rem;
-          padding: 3%;
-          margin-left: 15px;
+            &:hover {
+              cursor: pointer;
+              color: white;
+              background-color: #24380d;
+              border: solid 3px #24380d;
+            }
 
-          a {
-            text-decoration: none;
-            color: @secondary-font-color;
-          }
+            @media @mobile {
+              margin-right: 0;
+              font-size: 1.6rem;
+            }
+          } // closes btn-solid;
 
-          &:hover {
-            cursor: pointer;
-            color: white;
-            background-color: #24380d;
-            border: solid 3px #24380d;
+          .btn-border {
+            background-color: white;
+            color: @button-color;
+            width: 100%;
+            border-radius: 10px;
+            border: solid 3px @button-color;
+            font-size: 2rem;
+            padding: 3%;
+            margin-left: 15px;
+
+            a {
+              text-decoration: none;
+              color: @secondary-font-color;
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: white;
+              background-color: #24380d;
+              border: solid 3px #24380d;
+            }
+
+            @media @mobile {
+              margin-left: 0;
+              font-size: 1.6rem;
+            }
+          } //closes btn-border
+
+          @media @mobile {
+            width: 70%;
           }
-        } //closes btn-border
-      } // closes buttons
+        } // closes buttons
+      } // closes plan-card
+      @media @mobile {
+        height: 400px;
+      }
     } // closes plan-cards
   } // closes card-section
 } // closes plans-section
