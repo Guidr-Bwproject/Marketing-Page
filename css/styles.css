@@ -657,7 +657,7 @@ nav .nav-container .nav-menu a {
 }
 .plans-section .card-section .plan-cards-bg {
   width: 35%;
-  height: 700px;
+  height: 800px;
   margin: 20px;
   border-radius: 12px;
   background-color: white;
@@ -681,7 +681,6 @@ nav .nav-container .nav-menu a {
 }
 .plans-section .card-section .plan-cards-bg .plan-card {
   position: absolute;
-  max-height: 400px;
 }
 .plans-section .card-section .plan-cards-bg .plan-card h1 {
   color: #314b11;
@@ -706,7 +705,7 @@ nav .nav-container .nav-menu a {
 }
 .plans-section .card-section .plan-cards-bg .plan-card ul {
   width: 60%;
-  height: 240px;
+  height: 500px;
   color: #707070;
   font-size: 1.5rem;
   line-height: 2;
@@ -718,6 +717,7 @@ nav .nav-container .nav-menu a {
   .plans-section .card-section .plan-cards-bg .plan-card ul {
     line-height: 1.5;
     font-size: 1rem;
+    height: 240px;
   }
 }
 .plans-section .card-section .plan-cards-bg .plan-card .buttons {
